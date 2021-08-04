@@ -3,10 +3,11 @@ import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.stage.Stage;
+import model.PersonEntity;
+import org.hibernate.Session;
+import utils.HibernateSessionFactory;
 
-import java.sql.Connection;
-import java.sql.DriverManager;
-import java.sql.SQLException;
+import java.sql.*;
 
 
 public class Main extends Application {
@@ -23,17 +24,23 @@ public class Main extends Application {
 
     public static void main(String[] args) {
         launch(args);
+        System.out.println("Hibernate tutorial");
 
-        String url = "jdbc:mysql://localhost:3306/BankDB?serverTimezone=Europe/Minsk&useSSL=false";
-        String username = "root";
-        String password = "Edward_375445375876";
-        System.out.println("Connecting...");
+        Session session = HibernateSessionFactory.getSessionFactory().openSession();
 
-        try (Connection connection = DriverManager.getConnection(url, username, password)) {
-            System.out.println("Connection successful!");
-        } catch (SQLException e) {
-            System.out.println("Connection failed!");
-            e.printStackTrace();
-        }
+        session.beginTransaction();
+
+        PersonEntity personEntity = new PersonEntity();
+
+        personEntity.setFirstname("Nick");
+        personEntity.setSecondname("VN");
+        personEntity.setSurname("Bruh");
+        personEntity.setCardNumber("112");
+        personEntity.setPhoneNumber("333333");
+
+        session.save(personEntity);
+        session.getTransaction().commit();
+
+        session.close();
     }
 }
