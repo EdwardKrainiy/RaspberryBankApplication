@@ -26,6 +26,14 @@ public class Person {
     @Column(name = "CardNumber")
     private String cardNumber;
 
+    public Person(String firstname, String lastname, String patronymic, String phoneNumber, String cardNumber) {
+        this.firstname = firstname;
+        this.lastname = lastname;
+        this.patronymic = patronymic;
+        this.phoneNumber = phoneNumber;
+        this.cardNumber = cardNumber;
+    }
+
     public int getId() {
         return id;
     }
