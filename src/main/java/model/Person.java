@@ -5,16 +5,27 @@ import java.util.Objects;
 
 @Entity
 @Table(name = "person", schema = "bankdb")
-public class PersonEntity {
-    private int id;
-    private String firstname;
-    private String secondname;
-    private String surname;
-    private String phoneNumber;
-    private String cardNumber;
+public class Person {
 
     @Id
-    @Column(name = "id")
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    private int id;
+
+    @Column(name = "Firstname")
+    private String firstname;
+
+    @Column(name = "Lastname")
+    private String lastname;
+
+    @Column(name = "Patronymic")
+    private String patronymic;
+
+    @Column(name = "PhoneNumber")
+    private String phoneNumber;
+
+    @Column(name = "CardNumber")
+    private String cardNumber;
+
     public int getId() {
         return id;
     }
@@ -23,8 +34,6 @@ public class PersonEntity {
         this.id = id;
     }
 
-    @Basic
-    @Column(name = "Firstname")
     public String getFirstname() {
         return firstname;
     }
@@ -33,28 +42,22 @@ public class PersonEntity {
         this.firstname = firstname;
     }
 
-    @Basic
-    @Column(name = "Secondname")
-    public String getSecondname() {
-        return secondname;
+    public String getLastname() {
+        return lastname;
     }
 
-    public void setSecondname(String secondname) {
-        this.secondname = secondname;
+    public void setLastname(String lastname) {
+        this.lastname = lastname;
     }
 
-    @Basic
-    @Column(name = "Surname")
-    public String getSurname() {
-        return surname;
+    public String getPatronymic() {
+        return patronymic;
     }
 
-    public void setSurname(String surname) {
-        this.surname = surname;
+    public void setPatronymic(String surname) {
+        this.patronymic = surname;
     }
 
-    @Basic
-    @Column(name = "PhoneNumber")
     public String getPhoneNumber() {
         return phoneNumber;
     }
@@ -63,8 +66,6 @@ public class PersonEntity {
         this.phoneNumber = phoneNumber;
     }
 
-    @Basic
-    @Column(name = "CardNumber")
     public String getCardNumber() {
         return cardNumber;
     }
@@ -77,17 +78,17 @@ public class PersonEntity {
     public boolean equals(Object o) {
         if (this == o) return true;
         if (o == null || getClass() != o.getClass()) return false;
-        PersonEntity that = (PersonEntity) o;
+        Person that = (Person) o;
         return id == that.id &&
                 Objects.equals(firstname, that.firstname) &&
-                Objects.equals(secondname, that.secondname) &&
-                Objects.equals(surname, that.surname) &&
+                Objects.equals(lastname, that.lastname) &&
+                Objects.equals(patronymic, that.patronymic) &&
                 Objects.equals(phoneNumber, that.phoneNumber) &&
                 Objects.equals(cardNumber, that.cardNumber);
     }
 
     @Override
     public int hashCode() {
-        return Objects.hash(id, firstname, secondname, surname, phoneNumber, cardNumber);
+        return Objects.hash(id, firstname, lastname, patronymic, phoneNumber, cardNumber);
     }
 }

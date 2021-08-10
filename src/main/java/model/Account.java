@@ -1,18 +1,16 @@
 package model;
 
-import javax.persistence.Column;
-import javax.persistence.Entity;
-import javax.persistence.Id;
-import javax.persistence.Table;
+import javax.persistence.*;
 import java.util.Objects;
 
 @Entity
 @Table(name = "account", schema = "bankdb")
-public class AccountEntity {
-    private int number;
+public class Account {
 
     @Id
-    @Column(name = "Number")
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    private int number;
+
     public int getNumber() {
         return number;
     }
@@ -25,7 +23,7 @@ public class AccountEntity {
     public boolean equals(Object o) {
         if (this == o) return true;
         if (o == null || getClass() != o.getClass()) return false;
-        AccountEntity that = (AccountEntity) o;
+        Account that = (Account) o;
         return number == that.number;
     }
 

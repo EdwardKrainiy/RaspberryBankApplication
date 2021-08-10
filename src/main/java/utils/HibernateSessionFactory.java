@@ -1,8 +1,8 @@
 package utils;
 
-import model.AccountEntity;
-import model.BankEntity;
-import model.PersonEntity;
+import model.Account;
+import model.Bank;
+import model.Person;
 import org.hibernate.SessionFactory;
 import org.hibernate.boot.registry.StandardServiceRegistryBuilder;
 import org.hibernate.cfg.Configuration;
@@ -17,14 +17,14 @@ public class HibernateSessionFactory {
         if (sessionFactory == null) {
             try {
                 Configuration configuration = new Configuration().configure();
-                configuration.addAnnotatedClass(BankEntity.class);
-                configuration.addAnnotatedClass(AccountEntity.class);
-                configuration.addAnnotatedClass(PersonEntity.class);
+                configuration.addAnnotatedClass(Bank.class);
+                configuration.addAnnotatedClass(Account.class);
+                configuration.addAnnotatedClass(Person.class);
                 StandardServiceRegistryBuilder builder = new StandardServiceRegistryBuilder().applySettings(configuration.getProperties());
                 sessionFactory = configuration.buildSessionFactory(builder.build());
 
             } catch (Exception e) {
-                System.out.println("Исключение!" + e);
+                System.out.println("Exception!" + e);
             }
         }
         return sessionFactory;

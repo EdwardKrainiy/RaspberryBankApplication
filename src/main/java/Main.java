@@ -3,11 +3,6 @@ import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.stage.Stage;
-import model.PersonEntity;
-import org.hibernate.Session;
-import utils.HibernateSessionFactory;
-
-import java.sql.*;
 
 
 public class Main extends Application {
@@ -26,21 +21,5 @@ public class Main extends Application {
         launch(args);
         System.out.println("Hibernate tutorial");
 
-        Session session = HibernateSessionFactory.getSessionFactory().openSession();
-
-        session.beginTransaction();
-
-        PersonEntity personEntity = new PersonEntity();
-
-        personEntity.setFirstname("Nick");
-        personEntity.setSecondname("VN");
-        personEntity.setSurname("Bruh");
-        personEntity.setCardNumber("112");
-        personEntity.setPhoneNumber("333333");
-
-        session.save(personEntity);
-        session.getTransaction().commit();
-
-        session.close();
     }
 }

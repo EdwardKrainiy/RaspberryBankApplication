@@ -1,29 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="ALL" />
+  </component>
   <component name="ChangeListManager">
-    <list default="true" id="2e40fb38-3a91-442e-a029-a5eedd6ab6a4" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/RaspberryBankWebApplication.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Hibernate_5_4_11_5_4_11.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/sqldialects.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/model/AccountEntity.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/model/BankEntity.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/model/PersonEntity.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/utils/HibernateSessionFactory.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/hibernate.cfg.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/domain/Account.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/domain/Bank.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/domain/Person.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/fxml/sample.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/fxml/sample.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/fxml/sample.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/fxml/sample.fxml" afterDir="false" />
-    </list>
+    <list default="true" id="2e40fb38-3a91-442e-a029-a5eedd6ab6a4" name="Default Changelist" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -52,17 +33,35 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Class" />
+        <option value="Interface" />
       </list>
     </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="MavenImportPreferences">
-    <option name="importingSettings">
-      <MavenImportingSettings>
-        <option name="importAutomatically" value="true" />
-      </MavenImportingSettings>
+  <component name="GitSEFilterConfiguration">
+    <file-type-list>
+      <filtered-out-file-type name="LOCAL_BRANCH" />
+      <filtered-out-file-type name="REMOTE_BRANCH" />
+      <filtered-out-file-type name="TAG" />
+      <filtered-out-file-type name="COMMIT_BY_MESSAGE" />
+    </file-type-list>
+  </component>
+  <component name="JpbToolWindowState">
+    <option name="myId2FirstActivated">
+      <map>
+        <entry key="JPA Inspector" value="true" />
+        <entry key="JPA Palette" value="true" />
+        <entry key="JPA Structure" value="true" />
+      </map>
+    </option>
+    <option name="myId2Visible">
+      <map>
+        <entry key="JPA Inspector" value="false" />
+        <entry key="JPA Palette" value="false" />
+        <entry key="JPA Structure" value="false" />
+      </map>
     </option>
   </component>
   <component name="ProjectId" id="1wGHDZY1iPrLsGlapC9wFKA1x60" />
@@ -71,7 +70,6 @@
   </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
-    <option name="showExcludedFiles" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
@@ -143,6 +141,7 @@
       </list>
     </recent_temporary>
   </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="SvnConfiguration">
     <configuration />
   </component>
@@ -155,77 +154,14 @@
       <updated>1628077885367</updated>
       <workItem from="1628077887208" duration="138000" />
       <workItem from="1628078049941" duration="357000" />
-      <workItem from="1628078729506" duration="3704000" />
+      <workItem from="1628078729506" duration="3979000" />
+      <workItem from="1628118594108" duration="359000" />
+      <workItem from="1628600471794" duration="622000" />
+      <workItem from="1628605166066" duration="4153000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
-    <option name="version" value="1" />
-  </component>
-  <component name="WindowStateProjectService">
-    <state x="552" y="178" key="#Assign_Data_Sources" timestamp="1628080377461">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state x="552" y="178" key="#Assign_Data_Sources/0.0.1920.1040@0.0.1920.1040" timestamp="1628080377461" />
-    <state x="552" y="178" key="#SQL_Resolution_Scopes" timestamp="1628078980696">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state x="552" y="178" key="#SQL_Resolution_Scopes/0.0.1920.1040@0.0.1920.1040" timestamp="1628078980696" />
-    <state x="414" y="175" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1628079392411">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state x="414" y="175" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1628079392411" />
-    <state x="689" y="295" key="#com.intellij.ide.util.PackageChooserDialog" timestamp="1628080346102">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state x="689" y="295" key="#com.intellij.ide.util.PackageChooserDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1628080346102" />
-    <state x="651" y="426" key="#com.intellij.javaee.module.view.common.J2EE.J2EEDeploymentDescriptorLocationPanel.changeDDPath" timestamp="1628080029143">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state x="651" y="426" key="#com.intellij.javaee.module.view.common.J2EE.J2EEDeploymentDescriptorLocationPanel.changeDDPath/0.0.1920.1040@0.0.1920.1040" timestamp="1628080029143" />
-    <state x="630" y="58" key="#com.intellij.jpa.generation.ui.DatabaseSchemaImportDialog" timestamp="1628080349420">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state x="630" y="58" key="#com.intellij.jpa.generation.ui.DatabaseSchemaImportDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1628080349420" />
-    <state x="719" y="206" key="FileChooserDialogImpl" timestamp="1628079151884">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state x="719" y="206" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1628079151884" />
-    <state width="1877" height="283" key="GridCell.Tab.0.bottom" timestamp="1628082242046">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state width="1877" height="283" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1628082242046" />
-    <state width="1877" height="283" key="GridCell.Tab.0.center" timestamp="1628082242046">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state width="1877" height="283" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1628082242046" />
-    <state width="1877" height="283" key="GridCell.Tab.0.left" timestamp="1628082242046">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state width="1877" height="283" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1628082242046" />
-    <state width="1877" height="283" key="GridCell.Tab.0.right" timestamp="1628082242046">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state width="1877" height="283" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1628082242046" />
-    <state width="196" height="457" key="HiddenNamespacesPopup" timestamp="1628079289326">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state width="196" height="457" key="HiddenNamespacesPopup/0.0.1920.1040@0.0.1920.1040" timestamp="1628079289326" />
-    <state x="490" y="175" key="Maven.ArtifactSearchDialog" timestamp="1628082421968">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state x="490" y="175" key="Maven.ArtifactSearchDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1628082421968" />
-    <state x="440" y="94" key="SettingsEditor" timestamp="1628080217034">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state x="440" y="94" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1628080217034" />
-    <state width="200" height="441" key="SqlResolveConfigurable" timestamp="1628078978980">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state width="200" height="441" key="SqlResolveConfigurable/0.0.1920.1040@0.0.1920.1040" timestamp="1628078978980" />
-    <state x="776" y="298" key="chooseDestDirectoryDialog" timestamp="1628078450610">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state x="776" y="298" key="chooseDestDirectoryDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1628078450610" />
+    <option name="version" value="3" />
   </component>
 </project>

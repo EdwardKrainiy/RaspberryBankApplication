@@ -12,8 +12,8 @@
     <property name="hibernate.dialect">org.hibernate.dialect.MySQLDialect</property>
     <property name="show_sql">true</property>
 
-    <mapping class="model.AccountEntity"/>
-    <mapping class="model.BankEntity"/>
-    <mapping class="model.PersonEntity"/>
+    <mapping class="model.Account"/>
+    <mapping class="model.Bank"/>
+    <mapping class="model.Person"/>
   </session-factory>
 </hibernate-configuration>

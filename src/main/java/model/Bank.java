@@ -5,12 +5,16 @@ import java.util.Objects;
 
 @Entity
 @Table(name = "bank", schema = "bankdb")
-public class BankEntity {
-    private int id;
-    private String name;
+public class Bank {
 
     @Id
-    @Column(name = "Id")
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    private int id;
+
+    @Basic
+    @Column(name = "Name")
+    private String name;
+
     public int getId() {
         return id;
     }
@@ -19,8 +23,6 @@ public class BankEntity {
         this.id = id;
     }
 
-    @Basic
-    @Column(name = "Name")
     public String getName() {
         return name;
     }
@@ -33,7 +35,7 @@ public class BankEntity {
     public boolean equals(Object o) {
         if (this == o) return true;
         if (o == null || getClass() != o.getClass()) return false;
-        BankEntity that = (BankEntity) o;
+        Bank that = (Bank) o;
         return id == that.id &&
                 Objects.equals(name, that.name);
     }
