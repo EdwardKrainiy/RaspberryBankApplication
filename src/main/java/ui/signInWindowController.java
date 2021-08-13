@@ -1,3 +1,5 @@
+package ui;
+
 import java.net.URL;
 import java.util.ResourceBundle;
 import javafx.fxml.FXML;
@@ -5,7 +7,7 @@ import javafx.scene.control.Button;
 import javafx.scene.control.PasswordField;
 import javafx.scene.control.TextField;
 
-public class Controller {
+public class signInWindowController {
 
     @FXML
     private ResourceBundle resources;
@@ -27,10 +29,10 @@ public class Controller {
 
     @FXML
     void initialize() {
-        assert login_field != null : "fx:id=\"login_field\" was not injected: check your FXML file 'application.fxml'.";
-        assert signInButton != null : "fx:id=\"signInButton\" was not injected: check your FXML file 'application.fxml'.";
-        assert password_field != null : "fx:id=\"password_field\" was not injected: check your FXML file 'application.fxml'.";
-        assert signUpButton != null : "fx:id=\"signUpButton\" was not injected: check your FXML file 'application.fxml'.";
+        assert login_field != null : "fx:id=\"login_field\" was not injected: check your FXML file 'signInWindow.fxml'.";
+        assert signInButton != null : "fx:id=\"signInButton\" was not injected: check your FXML file 'signInWindow.fxml'.";
+        assert password_field != null : "fx:id=\"password_field\" was not injected: check your FXML file 'signInWindow.fxml'.";
+        assert signUpButton != null : "fx:id=\"signUpButton\" was not injected: check your FXML file 'signInWindow.fxml'.";
 
         signInButton.setOnAction(event -> {
             System.out.println("Login!");
