@@ -4,16 +4,9 @@
     <option name="autoReloadType" value="ALL" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="2e40fb38-3a91-442e-a029-a5eedd6ab6a4" name="Default Changelist" comment="Some project structure changes.">
+    <list default="true" id="2e40fb38-3a91-442e-a029-a5eedd6ab6a4" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/dao/AccountDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dao/AccountDAO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/dao/BankDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dao/BankDAO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/dao/PersonDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dao/PersonDAO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/service/AccountService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/service/AccountService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/service/BankService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/service/BankService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/service/PersonService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/service/PersonService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ui/appController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/service/controller/appController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ui/signInWindowController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/service/controller/signInWindowController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/fxml/app.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/fxml/app.fxml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/fxml/signInWindow.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/fxml/signInWindow.fxml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -176,7 +169,7 @@
       <workItem from="1628600471794" duration="622000" />
       <workItem from="1628605166066" duration="4153000" />
       <workItem from="1628610329199" duration="2509000" />
-      <workItem from="1628850811251" duration="8311000" />
+      <workItem from="1628850811251" duration="8877000" />
     </task>
     <task id="LOCAL-00001" summary="Added services.">
       <created>1628611640766</created>
@@ -213,7 +206,14 @@
       <option name="project" value="LOCAL" />
       <updated>1628861158596</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="Some project structure changes.">
+      <created>1628861568714</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1628861568714</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
