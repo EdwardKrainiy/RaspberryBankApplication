@@ -6,7 +6,7 @@ import model.Bank;
 import java.util.List;
 
 public class BankService {
-    private BankDAO bankDAO = new BankDAO();
+    private final BankDAO bankDAO = new BankDAO();
 
     public BankService(){};
 

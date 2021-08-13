@@ -16,8 +16,7 @@ public class PersonDAO implements DAOInterface<Person> {
 
     @Override
     public List<Person> findAll(){
-        List<Person> personList = HibernateSessionFactory.getSessionFactory().openSession().createQuery("From Person ").list();
-        return personList;
+        return (List<Person>) HibernateSessionFactory.getSessionFactory().openSession().createQuery("From Person ").list();
     }
 
     @Override

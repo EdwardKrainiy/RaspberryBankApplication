@@ -16,8 +16,7 @@ public class BankDAO implements DAOInterface<Bank> {
 
     @Override
     public List<Bank> findAll(){
-        List<Bank> bankList = HibernateSessionFactory.getSessionFactory().openSession().createQuery("From Bank").list();
-        return bankList;
+        return (List<Bank>) HibernateSessionFactory.getSessionFactory().openSession().createQuery("From Bank").list();
     }
 
     @Override

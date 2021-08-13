@@ -6,9 +6,9 @@ import model.Account;
 import java.util.List;
 
 public class AccountService {
-    private AccountDAO accountDAO = new AccountDAO();
+    private final AccountDAO accountDAO = new AccountDAO();
 
-    public AccountService(){};
+    public AccountService(){}
 
     public Account findAccount(int number){
         return accountDAO.findById(number);

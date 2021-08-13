@@ -16,8 +16,7 @@ public class AccountDAO implements  DAOInterface<Account>{
 
     @Override
     public List<Account> findAll(){
-        List<Account> accountList = HibernateSessionFactory.getSessionFactory().openSession().createQuery("From Account").list();
-        return accountList;
+        return (List<Account>) HibernateSessionFactory.getSessionFactory().openSession().createQuery("From Account").list();
     }
 
     @Override

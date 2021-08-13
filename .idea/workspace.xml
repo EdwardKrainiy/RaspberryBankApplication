@@ -4,17 +4,17 @@
     <option name="autoReloadType" value="ALL" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="2e40fb38-3a91-442e-a029-a5eedd6ab6a4" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/ui/appController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/bank_icon.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/fxml/app.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
+    <list default="true" id="2e40fb38-3a91-442e-a029-a5eedd6ab6a4" name="Default Changelist" comment="Some project structure changes.">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Controller.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ui/signInWindowController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/fxml/application.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/fxml/signInWindow.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/fxml/application.fxml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/dao/AccountDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dao/AccountDAO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/dao/BankDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dao/BankDAO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/dao/PersonDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dao/PersonDAO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/service/AccountService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/service/AccountService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/service/BankService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/service/BankService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/service/PersonService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/service/PersonService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ui/appController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/service/controller/appController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ui/signInWindowController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/service/controller/signInWindowController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/fxml/signInWindow.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/fxml/signInWindow.fxml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -109,6 +109,7 @@
       <recent name="D:\Proga\Git Repository\RaspberryBankWebApplication\src\main\resources\assets" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\Proga\Git Repository\RaspberryBankWebApplication\src\main\resources\assets" />
       <recent name="D:\Proga\Git Repository\RaspberryBankWebApplication\src\main\resources" />
       <recent name="D:\Proga\Java_Algorithms\RaspberryBankWebApplication\src\main\resources\fxml" />
     </key>
@@ -175,7 +176,7 @@
       <workItem from="1628600471794" duration="622000" />
       <workItem from="1628605166066" duration="4153000" />
       <workItem from="1628610329199" duration="2509000" />
-      <workItem from="1628850811251" duration="7738000" />
+      <workItem from="1628850811251" duration="8311000" />
     </task>
     <task id="LOCAL-00001" summary="Added services.">
       <created>1628611640766</created>
@@ -205,18 +206,38 @@
       <option name="project" value="LOCAL" />
       <updated>1628857968094</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Added app window and bank icon on signIn window.">
+      <created>1628861158596</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1628861158596</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Added services." />
     <MESSAGE value="Fixed hibernate.cfg.xml file. Connection is working." />
     <MESSAGE value="Added Balance field on Account table." />
     <MESSAGE value="Minor changes on field names." />
-    <option name="LAST_COMMIT_MESSAGE" value="Minor changes on field names." />
+    <MESSAGE value="Added app window and bank icon on signIn window." />
+    <MESSAGE value="Some project structure changes." />
+    <option name="LAST_COMMIT_MESSAGE" value="Some project structure changes." />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

@@ -6,7 +6,7 @@ import model.Person;
 import java.util.List;
 
 public class PersonService {
-    private PersonDAO personDAO  = new PersonDAO();
+    private final PersonDAO personDAO  = new PersonDAO();
 
     public PersonService(){};
 
