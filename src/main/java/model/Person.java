@@ -34,6 +34,10 @@ public class Person {
         this.cardNumber = cardNumber;
     }
 
+    public Person() {
+
+    }
+
     public int getId() {
         return id;
     }

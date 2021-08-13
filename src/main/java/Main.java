@@ -3,6 +3,8 @@ import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.stage.Stage;
+import model.Person;
+import service.PersonService;
 
 public class Main extends Application {
 
@@ -19,5 +21,8 @@ public class Main extends Application {
     public static void main(String[] args) {
         launch(args);
 
+        Person person = new Person("a", "b", "c", "123", "456");
+        PersonService personService = new PersonService();
+        personService.savePerson(person);
     }
 }
