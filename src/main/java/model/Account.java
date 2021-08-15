@@ -3,41 +3,42 @@ package model;
 import javax.persistence.*;
 import java.util.Objects;
 
-@Entity
 @Table(name = "account", schema = "bankdb")
-public class Account {
+public class Account extends  BaseEntity {
 
-    @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private int number;
-    private int balance;
+    private String login;
+    private String password;
 
-    public int getNumber() {
-        return number;
+    @Basic
+    @Column(name = "Login")
+    public String getLogin() {
+        return login;
     }
 
-    public void setNumber(int number) {
-        this.number = number;
+    public void setLogin(String login) {
+        this.login = login;
     }
 
-    public int getBalance() {
-        return balance;
+    @Basic
+    @Column(name = "Password")
+    public String getPassword() {
+        return password;
     }
 
-    public void setBalance(int balance) {
-        this.balance = balance;
+    public void setPassword(String password) {
+        this.password = password;
     }
 
     @Override
     public boolean equals(Object o) {
         if (this == o) return true;
-        if (!(o instanceof Account)) return false;
-        Account account = (Account) o;
-        return getNumber() == account.getNumber() && getBalance() == account.getBalance();
+        if (o == null || getClass() != o.getClass()) return false;
+        Account that = (Account) o;
+        return id == that.id && Objects.equals(login, that.login) && Objects.equals(password, that.password);
     }
 
     @Override
     public int hashCode() {
-        return Objects.hash(number);
+        return Objects.hash(id, login, password);
     }
 }

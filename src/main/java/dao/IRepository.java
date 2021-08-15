@@ -2,7 +2,7 @@ package dao;
 
 import java.util.List;
 
-public interface DAOInterface<T> {
+public interface IRepository<T> {
     void save(T obj);
     void update(T obj);
     void delete(T obj);

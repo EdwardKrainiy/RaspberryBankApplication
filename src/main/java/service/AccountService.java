@@ -1,32 +1,32 @@
 package service;
 
-import dao.AccountDAO;
+import dao.AccountRepository;
 import model.Account;
 
 import java.util.List;
 
 public class AccountService {
-    private final AccountDAO accountDAO = new AccountDAO();
+    private final AccountRepository accountRepository = new AccountRepository();
 
     public AccountService(){}
 
     public Account findAccount(int number){
-        return accountDAO.findById(number);
+        return accountRepository.findById(number);
     }
 
     public List<Account> findAllAccounts(){
-        return accountDAO.findAll();
+        return accountRepository.findAll();
     }
 
     public void saveAccount(Account account){
-        accountDAO.save(account);
+        accountRepository.save(account);
     }
 
     public void updateAccount(Account account){
-        accountDAO.update(account);
+        accountRepository.update(account);
     }
 
     public void deleteAccount(Account account){
-        accountDAO.delete(account);
+        accountRepository.delete(account);
     }
 }
