@@ -5,9 +5,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="2e40fb38-3a91-442e-a029-a5eedd6ab6a4" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/main/java/controller/signUpWindowController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/hibernate.cfg.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/hibernate.cfg.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/service/controller/appController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/controller/appController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/service/controller/signInWindowController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/controller/signInWindowController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/service/controller/signUpWindowController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/fxml/app.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/fxml/app.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/fxml/signInWindow.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/fxml/signInWindow.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/fxml/signUpWindow.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/fxml/signUpWindow.fxml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/hibernate.cfg.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/hibernate.cfg.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -107,6 +112,9 @@
       <recent name="D:\Proga\Git Repository\RaspberryBankWebApplication\src\main\resources" />
       <recent name="D:\Proga\Java_Algorithms\RaspberryBankWebApplication\src\main\resources\fxml" />
     </key>
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="" />
+    </key>
     <key name="ImportMappingsDialog.RecentPackages">
       <recent name="" />
       <recent name="model" />
@@ -176,7 +184,8 @@
       <workItem from="1628605166066" duration="4153000" />
       <workItem from="1628610329199" duration="2509000" />
       <workItem from="1628850811251" duration="8966000" />
-      <workItem from="1629029147097" duration="5472000" />
+      <workItem from="1629029147097" duration="5510000" />
+      <workItem from="1629104800340" duration="3384000" />
     </task>
     <task id="LOCAL-00001" summary="Added services.">
       <created>1628611640766</created>
@@ -234,7 +243,14 @@
       <option name="project" value="LOCAL" />
       <updated>1629034465980</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="Minor changes on hibernate.cfg.xml file mappings.">
+      <created>1629034707081</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1629034707081</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -286,7 +302,8 @@
     <MESSAGE value="Some project structure changes." />
     <MESSAGE value="Minor changes." />
     <MESSAGE value="Major changes on DB structure." />
-    <option name="LAST_COMMIT_MESSAGE" value="Major changes on DB structure." />
+    <MESSAGE value="Minor changes on hibernate.cfg.xml file mappings." />
+    <option name="LAST_COMMIT_MESSAGE" value="Minor changes on hibernate.cfg.xml file mappings." />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

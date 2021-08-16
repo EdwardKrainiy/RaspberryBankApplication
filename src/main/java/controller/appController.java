@@ -1,4 +1,4 @@
-package service.controller;
+package controller;
 
 public class appController {
 }

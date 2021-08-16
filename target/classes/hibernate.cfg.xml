@@ -12,8 +12,5 @@
     <mapping class="model.Account"/>
     <mapping class="model.AccountInfo"/>
     <mapping class="model.Card"/>
-    <mapping class="model.Account"/>
-      <mapping class="model.AccountInfo"/>
-      <mapping class="model.Card"/>
   </session-factory>
 </hibernate-configuration>
