@@ -24,11 +24,6 @@
                         <Font size="17.0" />
                     </font>
                 </TextField>
-                <Button fx:id="signUpNextButton" layoutX="295.0" layoutY="216.0" mnemonicParsing="false" prefHeight="19.0" prefWidth="111.0" style="-fx-background-color: #698fc7;" text="Далее" textFill="WHITE">
-                    <font>
-                        <Font size="15.0" />
-                    </font>
-                </Button>
             <TextField fx:id="personalDataPatronymicField" layoutX="14.0" layoutY="61.0" prefHeight="38.0" prefWidth="325.0" promptText="Отчество">
                <font>
                   <Font size="17.0" />
@@ -49,6 +44,11 @@
                   <Font size="17.0" />
                </font>
             </TextField>
+            <Button fx:id="signUpCompleteButton" layoutX="268.0" layoutY="208.0" mnemonicParsing="false" prefHeight="31.0" prefWidth="164.0" style="-fx-background-color: #698fc7;" text="Зарегистрироваться" textFill="WHITE">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Button>
             </children>
         </AnchorPane>
         <Label layoutX="78.0" layoutY="6.0" prefHeight="60.0" prefWidth="272.0" text="Bank App" textFill="WHITE">

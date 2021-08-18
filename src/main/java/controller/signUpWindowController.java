@@ -3,6 +3,8 @@ package controller;
 import java.net.URL;
 import java.util.List;
 import java.util.ResourceBundle;
+
+import Util.UiUtil;
 import javafx.fxml.FXML;
 import javafx.scene.control.Button;
 import javafx.scene.control.PasswordField;
@@ -55,8 +57,8 @@ public class signUpWindowController {
     public void enterLoginAndPassword(){
         signUpNextButton.setOnAction(event -> {
             String loginText = signUpLoginField.getText().trim();
-            String passwordText = signUpPasswordField.getText().trim();
-            String repeatPasswordText = signUpRepeatPasswordField.getText().trim();
+            String passwordText = signUpPasswordField.getText();
+            String repeatPasswordText = signUpRepeatPasswordField.getText();
 
             List<Account> accountList = AccountService.findAllAccounts();
 
@@ -73,6 +75,9 @@ public class signUpWindowController {
                     if(repeatPasswordText.equals(passwordText))
                     {
                         Account newAccount = new Account(loginText, passwordText);
+                        AccountService.saveAccount(newAccount);
+
+                        UiUtil.goToNextWindow("/fxml/signUpEnterPersonalWindow.fxml", signUpNextButton);
                     }
                     else {
                         emptyFieldsText.setVisible(false);

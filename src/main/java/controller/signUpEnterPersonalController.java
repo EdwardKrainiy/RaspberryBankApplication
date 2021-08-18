@@ -21,9 +21,6 @@ public class signUpEnterPersonalController {
     private TextField personalDataFirstNameField;
 
     @FXML
-    private Button signUpNextButton;
-
-    @FXML
     private TextField personalDataPatronymicField;
 
     @FXML
@@ -33,13 +30,20 @@ public class signUpEnterPersonalController {
     private TextField cardNumber;
 
     @FXML
+    private Button signUpCompleteButton;
+
+    @FXML
     void initialize() {
         assert personalDataLastNameField != null : "fx:id=\"personalDataLastNameField\" was not injected: check your FXML file 'signUpEnterPersonalWindow.fxml'.";
         assert personalDataFirstNameField != null : "fx:id=\"personalDataFirstNameField\" was not injected: check your FXML file 'signUpEnterPersonalWindow.fxml'.";
-        assert signUpNextButton != null : "fx:id=\"signUpNextButton\" was not injected: check your FXML file 'signUpEnterPersonalWindow.fxml'.";
         assert personalDataPatronymicField != null : "fx:id=\"personalDataPatronymicField\" was not injected: check your FXML file 'signUpEnterPersonalWindow.fxml'.";
         assert personalDataPhoneNumberField != null : "fx:id=\"personalDataPhoneNumberField\" was not injected: check your FXML file 'signUpEnterPersonalWindow.fxml'.";
         assert cardNumber != null : "fx:id=\"cardNumber\" was not injected: check your FXML file 'signUpEnterPersonalWindow.fxml'.";
+        assert signUpCompleteButton != null : "fx:id=\"signUpCompleteButton\" was not injected: check your FXML file 'signUpEnterPersonalWindow.fxml'.";
 
+
+        signUpCompleteButton.setOnAction(event -> {
+            System.out.println("hello");
+        });
     }
 }
