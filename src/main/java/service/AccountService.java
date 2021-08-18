@@ -18,6 +18,10 @@ public class AccountService {
         return accountRepository.findAll();
     }
 
+    public static Account findByLogin(String login){
+        return accountRepository.findByLogin(login);
+    }
+
     public static void saveAccount(Account account){
         accountRepository.save(account);
     }

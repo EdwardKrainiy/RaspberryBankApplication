@@ -1,7 +1,6 @@
 package controller;
 
 import java.net.URL;
-import java.util.List;
 import java.util.ResourceBundle;
 
 import Util.UiUtil;
@@ -37,20 +36,12 @@ public class signUpWindowController {
     private Text loginErrorText;
 
     @FXML
-    private Text emptyFieldsText;
-
-    @FXML
-    private Text checkPasswordText;
-
-    @FXML
     void initialize() {
         assert signUpLoginField != null : "fx:id=\"signUpLoginField\" was not injected: check your FXML file 'signUpWindow.fxml'.";
         assert signUpNextButton != null : "fx:id=\"signUpNextButton\" was not injected: check your FXML file 'signUpWindow.fxml'.";
         assert signUpPasswordField != null : "fx:id=\"signUpPasswordField\" was not injected: check your FXML file 'signUpWindow.fxml'.";
         assert signUpRepeatPasswordField != null : "fx:id=\"signUpRepeatPasswordField\" was not injected: check your FXML file 'signUpWindow.fxml'.";
         assert loginErrorText != null : "fx:id=\"loginErrorText\" was not injected: check your FXML file 'signUpWindow.fxml'.";
-        assert emptyFieldsText != null : "fx:id=\"emptyFieldsText\" was not injected: check your FXML file 'signUpWindow.fxml'.";
-        assert checkPasswordText != null : "fx:id=\"checkPasswordText\" was not injected: check your FXML file 'signUpWindow.fxml'.";
 
         enterLoginAndPassword();
     }
@@ -60,15 +51,7 @@ public class signUpWindowController {
             String passwordText = signUpPasswordField.getText();
             String repeatPasswordText = signUpRepeatPasswordField.getText();
 
-            List<Account> accountList = AccountService.findAllAccounts();
-
-            boolean isLoginExisting = false;
-
-            for(Account a: accountList){
-                if(loginText.equals(a.getLogin())){
-                    isLoginExisting = true;
-                }
-            }
+            boolean isLoginExisting = AccountService.findByLogin(loginText) != null;
 
             if(!loginText.equals("") && !passwordText.equals("")){
                 if(!isLoginExisting){
@@ -80,21 +63,18 @@ public class signUpWindowController {
                         UiUtil.goToNextWindow("/fxml/signUpEnterPersonalWindow.fxml", signUpNextButton);
                     }
                     else {
-                        emptyFieldsText.setVisible(false);
-                        loginErrorText.setVisible(false);
-                        checkPasswordText.setVisible(true);
+                        loginErrorText.setVisible(true);
+                        loginErrorText.setText("Пароли не совпадают!");
                     }
                 }
                 else {
-                    emptyFieldsText.setVisible(false);
-                    checkPasswordText.setVisible(false);
                     loginErrorText.setVisible(true);
+                    loginErrorText.setText("Пользователь с таким логином уже существует.");
                 }
             }
             else {
-                checkPasswordText.setVisible(false);
-                loginErrorText.setVisible(false);
-                emptyFieldsText.setVisible(true);
+                loginErrorText.setVisible(true);
+                loginErrorText.setText("Введите логин и пароль!");
             }
         });
     }

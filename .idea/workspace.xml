@@ -5,12 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="2e40fb38-3a91-442e-a029-a5eedd6ab6a4" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/Util/UiUtil.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/controller/signInWindowController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/controller/signInWindowController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/controller/signUpEnterPersonalController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/controller/signUpEnterPersonalController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/controller/signUpWindowController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/controller/signUpWindowController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/fxml/signUpEnterPersonalWindow.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/fxml/signUpEnterPersonalWindow.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/dao/AccountRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dao/AccountRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/service/AccountService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/service/AccountService.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -183,7 +181,7 @@
       <workItem from="1628850811251" duration="8966000" />
       <workItem from="1629029147097" duration="5510000" />
       <workItem from="1629104800340" duration="10167000" />
-      <workItem from="1629281752605" duration="7813000" />
+      <workItem from="1629281752605" duration="9176000" />
     </task>
     <task id="LOCAL-00001" summary="Added services.">
       <created>1628611640766</created>
@@ -262,7 +260,14 @@
       <option name="project" value="LOCAL" />
       <updated>1629304531960</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="Added Util package and UiUtil class with UI methods.">
+      <created>1629305909624</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1629305909624</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -318,7 +323,9 @@
     <MESSAGE value="Major changes on Contollers." />
     <MESSAGE value="Major changes on Contollers. Now we can navigate to Sign Up window." />
     <MESSAGE value="Changes on Entity classes and mappings. Now login and password check works." />
-    <option name="LAST_COMMIT_MESSAGE" value="Changes on Entity classes and mappings. Now login and password check works." />
+    <MESSAGE value="Added Util package with UI methods, which can be used on any UI class." />
+    <MESSAGE value="Added Util package and UiUtil class with UI methods." />
+    <option name="LAST_COMMIT_MESSAGE" value="Added Util package and UiUtil class with UI methods." />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
