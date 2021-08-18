@@ -1,6 +1,8 @@
 package dao;
 
-public class AccountInfoRepository extends EntityRepository<model.AccountInfo> {
+import model.AccountInfo;
+
+public class AccountInfoRepository extends EntityRepository<AccountInfo> {
     @Override
     public String getTableName() {
         return "Accountinfo";

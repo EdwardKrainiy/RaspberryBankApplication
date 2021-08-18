@@ -3,18 +3,28 @@ package model;
 import javax.persistence.*;
 import java.util.Objects;
 
-@Table(name = "accountinfo", schema = "bankdb")
+@Entity
+@Table(name = "accountinfo")
 public class AccountInfo extends BaseEntity {
-    private int id;
+
+    @Column(name = "AccountID")
     private int accountId;
+
+    @Column(name = "Firstname")
     private String firstname;
+
+    @Column(name = "Lastname")
     private String lastname;
+
+    @Column(name = "Patronymic")
     private String patronymic;
+
+    @Column(name = "PhoneNumber")
     private String phoneNumber;
+
+    @Column(name = "Balance")
     private int balance;
 
-    @Basic
-    @Column(name = "AccountID")
     public int getAccountId() {
         return accountId;
     }
@@ -23,8 +33,6 @@ public class AccountInfo extends BaseEntity {
         this.accountId = accountId;
     }
 
-    @Basic
-    @Column(name = "Firstname")
     public String getFirstname() {
         return firstname;
     }
@@ -33,8 +41,6 @@ public class AccountInfo extends BaseEntity {
         this.firstname = firstname;
     }
 
-    @Basic
-    @Column(name = "Lastname")
     public String getLastname() {
         return lastname;
     }
@@ -43,8 +49,6 @@ public class AccountInfo extends BaseEntity {
         this.lastname = lastname;
     }
 
-    @Basic
-    @Column(name = "Patronymic")
     public String getPatronymic() {
         return patronymic;
     }
@@ -53,8 +57,6 @@ public class AccountInfo extends BaseEntity {
         this.patronymic = patronymic;
     }
 
-    @Basic
-    @Column(name = "PhoneNumber")
     public String getPhoneNumber() {
         return phoneNumber;
     }
@@ -63,8 +65,6 @@ public class AccountInfo extends BaseEntity {
         this.phoneNumber = phoneNumber;
     }
 
-    @Basic
-    @Column(name = "Balance")
     public int getBalance() {
         return balance;
     }
@@ -84,5 +84,17 @@ public class AccountInfo extends BaseEntity {
     @Override
     public int hashCode() {
         return Objects.hash(id, accountId, firstname, lastname, patronymic, phoneNumber, balance);
+    }
+
+    public AccountInfo(int accountId, String firstname, String lastname, String patronymic, String phoneNumber, int balance) {
+        this.accountId = accountId;
+        this.firstname = firstname;
+        this.lastname = lastname;
+        this.patronymic = patronymic;
+        this.phoneNumber = phoneNumber;
+        this.balance = balance;
+    }
+
+    public AccountInfo() {
     }
 }

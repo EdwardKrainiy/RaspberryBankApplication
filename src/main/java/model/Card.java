@@ -3,15 +3,19 @@ package model;
 import javax.persistence.*;
 import java.util.Objects;
 
-@Table(name = "card", schema = "bankdb", catalog = "")
+@Entity
+@Table(name = "card")
 public class Card extends BaseEntity{
-    private int id;
+
+    @Column(name = "AccountId")
     private int accountId;
+
+    @Column(name = "CardNumber")
     private String cardNumber;
+
+    @Column(name = "SecureCode")
     private int secureCode;
 
-    @Basic
-    @Column(name = "AccountId")
     public int getAccountId() {
         return accountId;
     }
@@ -20,8 +24,6 @@ public class Card extends BaseEntity{
         this.accountId = accountId;
     }
 
-    @Basic
-    @Column(name = "CardNumber")
     public String getCardNumber() {
         return cardNumber;
     }
@@ -30,8 +32,6 @@ public class Card extends BaseEntity{
         this.cardNumber = cardNumber;
     }
 
-    @Basic
-    @Column(name = "SecureCode")
     public int getSecureCode() {
         return secureCode;
     }
@@ -51,5 +51,14 @@ public class Card extends BaseEntity{
     @Override
     public int hashCode() {
         return Objects.hash(id, accountId, cardNumber, secureCode);
+    }
+
+    public Card(int accountId, String cardNumber, int secureCode) {
+        this.accountId = accountId;
+        this.cardNumber = cardNumber;
+        this.secureCode = secureCode;
+    }
+
+    public Card() {
     }
 }

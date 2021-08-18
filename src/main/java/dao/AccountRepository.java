@@ -6,6 +6,6 @@ public class AccountRepository extends EntityRepository<Account> {
 
     @Override
     public String getTableName() {
-        return "account";
+        return "Account";
     }
 }

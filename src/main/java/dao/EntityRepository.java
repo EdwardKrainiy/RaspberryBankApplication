@@ -16,7 +16,7 @@ public abstract class EntityRepository<TEntity extends BaseEntity> implements IR
 
     @Override
     public List<TEntity> findAll(){
-        return (List<TEntity>) HibernateSessionFactory.getSessionFactory().openSession().createQuery("From " + getTableName()).list();
+        return (List<TEntity>) HibernateSessionFactory.getSessionFactory().openSession().createQuery("from " + getTableName()).list();
     }
 
     @Override

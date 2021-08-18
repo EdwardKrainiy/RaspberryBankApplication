@@ -6,27 +6,27 @@ import model.Account;
 import java.util.List;
 
 public class AccountService {
-    private final AccountRepository accountRepository = new AccountRepository();
+    private static final AccountRepository accountRepository = new AccountRepository();
 
     public AccountService(){}
 
-    public Account findAccount(int number){
+    public static Account findAccount(int number){
         return accountRepository.findById(number);
     }
 
-    public List<Account> findAllAccounts(){
+    public static List<Account> findAllAccounts(){
         return accountRepository.findAll();
     }
 
-    public void saveAccount(Account account){
+    public static void saveAccount(Account account){
         accountRepository.save(account);
     }
 
-    public void updateAccount(Account account){
+    public static void updateAccount(Account account){
         accountRepository.update(account);
     }
 
-    public void deleteAccount(Account account){
+    public static void deleteAccount(Account account){
         accountRepository.delete(account);
     }
 }

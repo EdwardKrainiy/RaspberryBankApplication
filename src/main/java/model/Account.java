@@ -3,14 +3,16 @@ package model;
 import javax.persistence.*;
 import java.util.Objects;
 
-@Table(name = "account", schema = "bankdb")
-public class Account extends  BaseEntity {
+@Entity
+@Table(name = "account")
+public class Account extends BaseEntity {
 
+    @Column(name = "Login")
     private String login;
+
+    @Column(name = "Password")
     private String password;
 
-    @Basic
-    @Column(name = "Login")
     public String getLogin() {
         return login;
     }
@@ -19,8 +21,6 @@ public class Account extends  BaseEntity {
         this.login = login;
     }
 
-    @Basic
-    @Column(name = "Password")
     public String getPassword() {
         return password;
     }
@@ -40,5 +40,13 @@ public class Account extends  BaseEntity {
     @Override
     public int hashCode() {
         return Objects.hash(id, login, password);
+    }
+
+    public Account(String login, String password){
+        this.login = login;
+        this.password = password;
+    }
+
+    public Account() {
     }
 }

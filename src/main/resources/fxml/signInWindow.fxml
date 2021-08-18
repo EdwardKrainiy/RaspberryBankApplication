@@ -15,7 +15,7 @@
       <AnchorPane layoutX="11.0" layoutY="66.0" prefHeight="1.0" prefWidth="678.0" style="-fx-background-color: #00497d;" />
       <AnchorPane layoutY="198.0" prefHeight="152.0" prefWidth="700.0" style="-fx-background-color: #c5dbfc;">
          <children>
-            <TextField fx:id="login_field" layoutX="179.0" layoutY="10.0" prefHeight="38.0" prefWidth="342.0" promptText="Логин">
+            <TextField fx:id="signInLoginField" layoutX="179.0" layoutY="10.0" prefHeight="38.0" prefWidth="342.0" promptText="Логин">
                <font>
                   <Font size="17.0" />
                </font>
@@ -25,7 +25,7 @@
                   <Font size="15.0" />
                </font>
             </Button>
-            <PasswordField fx:id="password_field" layoutX="179.0" layoutY="62.0" prefHeight="38.0" prefWidth="342.0" promptText="Пароль">
+            <PasswordField fx:id="signInPasswordField" layoutX="179.0" layoutY="62.0" prefHeight="38.0" prefWidth="342.0" promptText="Пароль">
                <font>
                   <Font size="17.0" />
                </font>
