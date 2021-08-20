@@ -45,6 +45,7 @@ public class signUpWindowController {
 
         enterLoginAndPassword();
     }
+
     public void enterLoginAndPassword(){
         signUpNextButton.setOnAction(event -> {
             String loginText = signUpLoginField.getText().trim();

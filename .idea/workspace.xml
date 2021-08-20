@@ -7,8 +7,7 @@
     <list default="true" id="2e40fb38-3a91-442e-a029-a5eedd6ab6a4" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/controller/signUpWindowController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/controller/signUpWindowController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/dao/AccountRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dao/AccountRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/service/AccountService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/service/AccountService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/fxml/signUpWindow.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/fxml/signUpWindow.fxml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -181,7 +180,9 @@
       <workItem from="1628850811251" duration="8966000" />
       <workItem from="1629029147097" duration="5510000" />
       <workItem from="1629104800340" duration="10167000" />
-      <workItem from="1629281752605" duration="9176000" />
+      <workItem from="1629281752605" duration="9208000" />
+      <workItem from="1629307938710" duration="73000" />
+      <workItem from="1629485537963" duration="3529000" />
     </task>
     <task id="LOCAL-00001" summary="Added services.">
       <created>1628611640766</created>
@@ -267,7 +268,14 @@
       <option name="project" value="LOCAL" />
       <updated>1629305909624</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="Minor changes.">
+      <created>1629307183063</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1629307183063</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -317,7 +325,6 @@
     <MESSAGE value="Minor changes on field names." />
     <MESSAGE value="Added app window and bank icon on signIn window." />
     <MESSAGE value="Some project structure changes." />
-    <MESSAGE value="Minor changes." />
     <MESSAGE value="Major changes on DB structure." />
     <MESSAGE value="Minor changes on hibernate.cfg.xml file mappings." />
     <MESSAGE value="Major changes on Contollers." />
@@ -325,7 +332,8 @@
     <MESSAGE value="Changes on Entity classes and mappings. Now login and password check works." />
     <MESSAGE value="Added Util package with UI methods, which can be used on any UI class." />
     <MESSAGE value="Added Util package and UiUtil class with UI methods." />
-    <option name="LAST_COMMIT_MESSAGE" value="Added Util package and UiUtil class with UI methods." />
+    <MESSAGE value="Minor changes." />
+    <option name="LAST_COMMIT_MESSAGE" value="Minor changes." />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
