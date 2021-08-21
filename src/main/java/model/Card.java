@@ -14,7 +14,7 @@ public class Card extends BaseEntity{
     private String cardNumber;
 
     @Column(name = "SecureCode")
-    private int secureCode;
+    private String secureCode;
 
     public int getAccountId() {
         return accountId;
@@ -32,11 +32,11 @@ public class Card extends BaseEntity{
         this.cardNumber = cardNumber;
     }
 
-    public int getSecureCode() {
+    public String getSecureCode() {
         return secureCode;
     }
 
-    public void setSecureCode(int secureCode) {
+    public void setSecureCode(String secureCode) {
         this.secureCode = secureCode;
     }
 
@@ -53,7 +53,7 @@ public class Card extends BaseEntity{
         return Objects.hash(id, accountId, cardNumber, secureCode);
     }
 
-    public Card(int accountId, String cardNumber, int secureCode) {
+    public Card(int accountId, String cardNumber, String secureCode) {
         this.accountId = accountId;
         this.cardNumber = cardNumber;
         this.secureCode = secureCode;

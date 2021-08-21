@@ -7,6 +7,7 @@ import utils.HibernateSessionFactory;
 
 import java.util.List;
 
+@SuppressWarnings("JpaQlInspection")
 public abstract class EntityRepository<TEntity extends BaseEntity> implements IRepository<TEntity> {
 
     @Override

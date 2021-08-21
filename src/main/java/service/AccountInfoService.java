@@ -6,7 +6,7 @@ import model.AccountInfo;
 import java.util.List;
 
 public class AccountInfoService {
-    private final AccountInfoRepository accountInfoRepository = new AccountInfoRepository();
+    private static final AccountInfoRepository accountInfoRepository = new AccountInfoRepository();
 
     public AccountInfoService(){};
 
@@ -18,7 +18,7 @@ public class AccountInfoService {
         return accountInfoRepository.findAll();
     }
 
-    public void saveAccountInfo(AccountInfo accountInfo){
+    public static void saveAccountInfo(AccountInfo accountInfo){
         accountInfoRepository.create(accountInfo);
     }
 

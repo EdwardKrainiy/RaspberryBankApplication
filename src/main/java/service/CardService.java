@@ -6,7 +6,7 @@ import model.Card;
 import java.util.List;
 
 public class CardService {
-    private final CardRepository cardRepository = new CardRepository();
+    private static final CardRepository cardRepository = new CardRepository();
 
     public CardService(){};
 
@@ -18,7 +18,7 @@ public class CardService {
         return cardRepository.findAll();
     }
 
-    public void saveCard(Card card){
+    public static void saveCard(Card card){
         cardRepository.create(card);
     }
 

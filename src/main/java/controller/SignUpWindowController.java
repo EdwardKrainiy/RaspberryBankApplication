@@ -61,10 +61,10 @@ public class SignUpWindowController {
         assert signUpBackButton != null : "fx:id=\"signUpCancelButton\" was not injected: check your FXML file 'signUpWindow.fxml'.";
 
         initializeBackButton();
-        enterLoginAndPassword();
+        initializeEnterLoginAndPasswordButton();
     }
 
-    private void enterLoginAndPassword(){
+    private void initializeEnterLoginAndPasswordButton(){
         signUpNextButton.setOnAction(event -> {
             String loginText = signUpLoginField.getText().trim();
             String passwordText = signUpPasswordField.getText();
