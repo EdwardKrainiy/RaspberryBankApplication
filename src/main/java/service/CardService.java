@@ -19,7 +19,7 @@ public class CardService {
     }
 
     public void saveCard(Card card){
-        cardRepository.save(card);
+        cardRepository.create(card);
     }
 
     public void updateCard(Card card){

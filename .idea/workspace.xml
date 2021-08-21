@@ -4,13 +4,19 @@
     <option name="autoReloadType" value="ALL" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="2e40fb38-3a91-442e-a029-a5eedd6ab6a4" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/Util/WindowPath.java" afterDir="false" />
+    <list default="true" id="2e40fb38-3a91-442e-a029-a5eedd6ab6a4" name="Default Changelist" comment="Added enterPersonalCancelButton. Some changes on CRUD operations.">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Util/UiUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Util/UiUtil.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/controller/signInWindowController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/controller/signInWindowController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/controller/signUpWindowController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/controller/signUpWindowController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/controller/signInWindowController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/controller/SignInWindowController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/controller/signUpEnterPersonalController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/controller/SignUpEnterPersonalController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/controller/signUpWindowController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/controller/SignUpWindowController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/dao/EntityRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dao/EntityRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/dao/IRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dao/IRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/service/AccountInfoService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/service/AccountInfoService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/service/AccountService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/service/AccountService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/service/CardService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/service/CardService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/fxml/signInWindow.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/fxml/signInWindow.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/fxml/signUpEnterPersonalWindow.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/fxml/signUpEnterPersonalWindow.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/fxml/signUpWindow.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/fxml/signUpWindow.fxml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -185,7 +191,7 @@
       <workItem from="1629104800340" duration="10167000" />
       <workItem from="1629281752605" duration="9208000" />
       <workItem from="1629307938710" duration="73000" />
-      <workItem from="1629485537963" duration="6064000" />
+      <workItem from="1629485537963" duration="9686000" />
     </task>
     <task id="LOCAL-00001" summary="Added services.">
       <created>1628611640766</created>
@@ -285,7 +291,14 @@
       <option name="project" value="LOCAL" />
       <updated>1629490283243</updated>
     </task>
-    <option name="localTasksCounter" value="15" />
+    <task id="LOCAL-00015" summary="OpenWindow method was edited. Added Cancel button. All paths was moved to WindowPath class by constants.">
+      <created>1629539813134</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1629539813134</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -343,7 +356,9 @@
     <MESSAGE value="Added Util package with UI methods, which can be used on any UI class." />
     <MESSAGE value="Added Util package and UiUtil class with UI methods." />
     <MESSAGE value="Minor changes." />
-    <option name="LAST_COMMIT_MESSAGE" value="Minor changes." />
+    <MESSAGE value="OpenWindow method was edited. Added Cancel button. All paths was moved to WindowPath class by constants." />
+    <MESSAGE value="Added enterPersonalCancelButton. Some changes on CRUD operations." />
+    <option name="LAST_COMMIT_MESSAGE" value="Added enterPersonalCancelButton. Some changes on CRUD operations." />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

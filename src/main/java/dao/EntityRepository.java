@@ -11,7 +11,7 @@ public abstract class EntityRepository<TEntity extends BaseEntity> implements IR
 
     @Override
     public TEntity findById(int id) {
-        return (TEntity) HibernateSessionFactory.getSessionFactory().openSession().get(getTableName(), id);
+        return (TEntity) HibernateSessionFactory.getSessionFactory().openSession().createQuery("from " + getTableName() + " WHERE id = " + id).uniqueResult();
     }
 
     @Override
@@ -20,21 +20,23 @@ public abstract class EntityRepository<TEntity extends BaseEntity> implements IR
     }
 
     @Override
-    public void save(TEntity entity) {
+    public int create(TEntity entity) {
         Session session = HibernateSessionFactory.getSessionFactory().openSession();
         Transaction tx1 = session.beginTransaction();
-        session.save(entity);
+        int entityId = (int) session.save(entity);
         tx1.commit();
         session.close();
+        return entityId;
     }
 
     @Override
-    public void update(TEntity entity){
+    public TEntity update(TEntity entity){
         Session session = HibernateSessionFactory.getSessionFactory().openSession();
         Transaction tx1 = session.beginTransaction();
         session.update(entity);
         tx1.commit();
         session.close();
+        return entity;
     }
 
     @Override

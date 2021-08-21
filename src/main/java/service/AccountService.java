@@ -22,8 +22,8 @@ public class AccountService {
         return accountRepository.findByLogin(login);
     }
 
-    public static void saveAccount(Account account){
-        accountRepository.save(account);
+    public static int createAccount(Account account){
+        return accountRepository.create(account);
     }
 
     public static void updateAccount(Account account){

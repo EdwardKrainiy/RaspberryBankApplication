@@ -14,7 +14,18 @@ import javafx.scene.text.Text;
 import model.Account;
 import service.AccountService;
 
-public class signUpWindowController {
+public class SignUpWindowController {
+
+    private static int createdAccountId;
+
+    public static int getCreatedAccountId() {
+        System.out.println(createdAccountId);
+        return createdAccountId;
+    }
+
+    public void setCreatedAccountId(int createdAccountId) {
+        SignUpWindowController.createdAccountId = createdAccountId;
+    }
 
     @FXML
     private ResourceBundle resources;
@@ -35,10 +46,10 @@ public class signUpWindowController {
     private PasswordField signUpRepeatPasswordField;
 
     @FXML
-    private Text loginErrorText;
+    private Text signUpErrorText;
 
     @FXML
-    private Button signUpCancelButton;
+    private Button signUpBackButton;
 
     @FXML
     void initialize() {
@@ -46,10 +57,10 @@ public class signUpWindowController {
         assert signUpNextButton != null : "fx:id=\"signUpNextButton\" was not injected: check your FXML file 'signUpWindow.fxml'.";
         assert signUpPasswordField != null : "fx:id=\"signUpPasswordField\" was not injected: check your FXML file 'signUpWindow.fxml'.";
         assert signUpRepeatPasswordField != null : "fx:id=\"signUpRepeatPasswordField\" was not injected: check your FXML file 'signUpWindow.fxml'.";
-        assert loginErrorText != null : "fx:id=\"loginErrorText\" was not injected: check your FXML file 'signUpWindow.fxml'.";
-        assert signUpCancelButton != null : "fx:id=\"signUpCancelButton\" was not injected: check your FXML file 'signUpWindow.fxml'.";
+        assert signUpErrorText != null : "fx:id=\"signUpErrorText\" was not injected: check your FXML file 'signUpWindow.fxml'.";
+        assert signUpBackButton != null : "fx:id=\"signUpCancelButton\" was not injected: check your FXML file 'signUpWindow.fxml'.";
 
-        initializeCancelButton();
+        initializeBackButton();
         enterLoginAndPassword();
     }
 
@@ -66,7 +77,7 @@ public class signUpWindowController {
                     if(repeatPasswordText.equals(passwordText))
                     {
                         Account newAccount = new Account(loginText, passwordText);
-                        AccountService.saveAccount(newAccount);
+                        setCreatedAccountId(AccountService.createAccount(newAccount));
 
                         try {
                             UiUtil.goToNextWindow(WindowPath.SIGN_UP_ENTER_PERSONAL_WINDOW, event);
@@ -75,24 +86,24 @@ public class signUpWindowController {
                         }
                     }
                     else {
-                        loginErrorText.setVisible(true);
-                        loginErrorText.setText("Пароли не совпадают!");
+                        signUpErrorText.setVisible(true);
+                        signUpErrorText.setText("Пароли не совпадают!");
                     }
                 }
                 else {
-                    loginErrorText.setVisible(true);
-                    loginErrorText.setText("Пользователь с таким логином уже существует.");
+                    signUpErrorText.setVisible(true);
+                    signUpErrorText.setText("Пользователь с таким логином уже существует.");
                 }
             }
             else {
-                loginErrorText.setVisible(true);
-                loginErrorText.setText("Введите логин и пароль!");
+                signUpErrorText.setVisible(true);
+                signUpErrorText.setText("Введите логин и пароль!");
             }
         });
     }
 
-    private void initializeCancelButton(){
-        signUpCancelButton.setOnAction(event -> {
+    private void initializeBackButton(){
+        signUpBackButton.setOnAction(event -> {
             try {
                 UiUtil.goToNextWindow(WindowPath.SIGN_IN_WINDOW, event);
             } catch (IOException e) {

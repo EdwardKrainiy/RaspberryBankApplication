@@ -19,7 +19,7 @@ public class AccountInfoService {
     }
 
     public void saveAccountInfo(AccountInfo accountInfo){
-        accountInfoRepository.save(accountInfo);
+        accountInfoRepository.create(accountInfo);
     }
 
     public void updateAccountInfo(AccountInfo accountInfo){
