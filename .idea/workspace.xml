@@ -5,9 +5,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="2e40fb38-3a91-442e-a029-a5eedd6ab6a4" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/main/java/Util/WindowPath.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Util/UiUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Util/UiUtil.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/controller/signInWindowController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/controller/signInWindowController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/controller/signUpWindowController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/controller/signUpWindowController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/fxml/signUpWindow.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/fxml/signUpWindow.fxml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -182,7 +185,7 @@
       <workItem from="1629104800340" duration="10167000" />
       <workItem from="1629281752605" duration="9208000" />
       <workItem from="1629307938710" duration="73000" />
-      <workItem from="1629485537963" duration="3529000" />
+      <workItem from="1629485537963" duration="6064000" />
     </task>
     <task id="LOCAL-00001" summary="Added services.">
       <created>1628611640766</created>
@@ -275,7 +278,14 @@
       <option name="project" value="LOCAL" />
       <updated>1629307183063</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="Minor changes.">
+      <created>1629490283242</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1629490283243</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

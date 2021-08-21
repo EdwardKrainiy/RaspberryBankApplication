@@ -1,9 +1,11 @@
 package controller;
 
+import java.io.IOException;
 import java.net.URL;
 import java.util.ResourceBundle;
 
 import Util.UiUtil;
+import Util.WindowPath;
 import javafx.fxml.FXML;
 import javafx.scene.control.Button;
 import javafx.scene.control.PasswordField;
@@ -42,7 +44,11 @@ public class signInWindowController {
 
     private void openSignUpWindow(){
         signUpButton.setOnAction(event -> {
-            UiUtil.goToNextWindow("/fxml/signUpWindow.fxml", signUpButton);
+            try {
+                UiUtil.goToNextWindow(WindowPath.SIGN_UP_WINDOW, event);
+            } catch (IOException e) {
+                e.printStackTrace();
+            }
         });
     }
 }
