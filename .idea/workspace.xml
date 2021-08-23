@@ -5,14 +5,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="2e40fb38-3a91-442e-a029-a5eedd6ab6a4" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/controller/AppMainWindowContoller.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/fxml/appMainWindow.fxml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Util/UiUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Util/UiUtil.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Util/WindowPath.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Util/WindowPath.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/controller/AppMainWindowContoller.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/controller/AppMainWindowContoller.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/controller/SignInWindowController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/controller/SignInWindowController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/controller/SignUpEnterPersonalController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/controller/SignUpEnterPersonalController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/fxml/signInWindow.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/fxml/signInWindow.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/controller/SignUpWindowController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/controller/SignUpWindowController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/fxml/appMainWindow.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/fxml/appMainWindow.fxml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -191,7 +189,7 @@
       <workItem from="1629485537963" duration="9753000" />
       <workItem from="1629546999204" duration="4523000" />
       <workItem from="1629559788882" duration="896000" />
-      <workItem from="1629710282765" duration="2905000" />
+      <workItem from="1629710282765" duration="4292000" />
     </task>
     <task id="LOCAL-00001" summary="Added services.">
       <created>1628611640766</created>
@@ -319,7 +317,14 @@
       <option name="project" value="LOCAL" />
       <updated>1629712225377</updated>
     </task>
-    <option name="localTasksCounter" value="19" />
+    <task id="LOCAL-00019" summary="Minor changes. Added new FXML file and new Controller.">
+      <created>1629713365017</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1629713365017</updated>
+    </task>
+    <option name="localTasksCounter" value="20" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -381,7 +386,8 @@
     <MESSAGE value="Added enterPersonalCancelButton. Some changes on CRUD operations." />
     <MESSAGE value="Sign Up now completely works." />
     <MESSAGE value="Minor changes on UI design. Now Authorization system completely works." />
-    <option name="LAST_COMMIT_MESSAGE" value="Minor changes on UI design. Now Authorization system completely works." />
+    <MESSAGE value="Minor changes. Added new FXML file and new Controller." />
+    <option name="LAST_COMMIT_MESSAGE" value="Minor changes. Added new FXML file and new Controller." />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

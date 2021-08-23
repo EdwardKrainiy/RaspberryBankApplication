@@ -18,6 +18,11 @@
                         <Font name="System Bold" size="15.0" />
                     </font>
                 </Text>
+            <Text fx:id="greetingText" layoutX="260.0" layoutY="33.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Добро пожаловать, " textAlignment="CENTER">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </Text>
             </children>
         </AnchorPane>
         <Label layoutX="78.0" layoutY="6.0" prefHeight="60.0" prefWidth="272.0" text="Bank App" textFill="WHITE">
@@ -36,11 +41,6 @@
                 <Font size="15.0" />
             </font>
         </Button>
-      <Text layoutX="359.0" layoutY="33.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Добро пожаловать, ">
-         <font>
-            <Font name="System Bold" size="18.0" />
-         </font>
-      </Text>
 
     </children>
 </AnchorPane>

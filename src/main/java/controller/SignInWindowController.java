@@ -77,6 +77,7 @@ public class SignInWindowController {
 
                 if(isLoginExisting && accountPassword.equals(passwordText)){
                     try {
+                        AppMainWindowContoller.setUserLogin(loginText);
                         UiUtil.goToNextWindow(WindowPath.APP_MAIN_WINDOW, event);
                     } catch (IOException e) {
                         e.printStackTrace();

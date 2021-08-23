@@ -72,6 +72,7 @@ public class SignUpEnterPersonalController {
             try {
                 UiUtil.goToNextWindow(WindowPath.SIGN_IN_WINDOW, event);
                 AccountService.deleteAccount(AccountService.findAccount(SignUpWindowController.getCreatedAccountId()));
+                AppMainWindowContoller.setUserLogin("");
             } catch (IOException e) {
                 e.printStackTrace();
             }

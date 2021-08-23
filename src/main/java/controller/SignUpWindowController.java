@@ -19,7 +19,6 @@ public class SignUpWindowController {
     private static int createdAccountId;
 
     public static int getCreatedAccountId() {
-        System.out.println(createdAccountId);
         return createdAccountId;
     }
 
@@ -78,9 +77,10 @@ public class SignUpWindowController {
                     {
                         Account newAccount = new Account(loginText, passwordText);
                         setCreatedAccountId(AccountService.createAccount(newAccount));
-
+                        AppMainWindowContoller.setUserLogin(loginText);
                         try {
                             UiUtil.goToNextWindow(WindowPath.SIGN_UP_ENTER_PERSONAL_WINDOW, event);
+
                         } catch (IOException e) {
                             e.printStackTrace();
                         }
@@ -102,7 +102,7 @@ public class SignUpWindowController {
         });
     }
 
-    private void initializeBackButton(){
+    public void initializeBackButton(){
         signUpBackButton.setOnAction(event -> {
             try {
                 UiUtil.goToNextWindow(WindowPath.SIGN_IN_WINDOW, event);
