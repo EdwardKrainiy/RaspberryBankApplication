@@ -12,6 +12,7 @@ import javafx.scene.control.Button;
 import javafx.scene.control.PasswordField;
 import javafx.scene.control.TextField;
 import javafx.scene.text.Text;
+import model.Account;
 import service.AccountInfoService;
 import service.AccountService;
 
@@ -71,11 +72,13 @@ public class SignInWindowController {
             String loginText = signInLoginField.getText();
             String passwordText = signInPasswordField.getText();
 
-            boolean isLoginExisting = AccountService.findByLogin(loginText) != null;
+            Account createdAccount = AccountService.findByLogin(loginText);
 
             if(!loginText.equals("") && !passwordText.equals("")){
 
-                String accountPassword = AccountService.findByLogin(loginText).getPassword();
+                boolean isLoginExisting = createdAccount != null;
+
+                String accountPassword = createdAccount.getPassword();
 
                 if(isLoginExisting && accountPassword.equals(passwordText)){
                     try {

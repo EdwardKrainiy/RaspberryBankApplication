@@ -1,9 +1,11 @@
 package controller;
 
+import Util.UiUtil;
 import javafx.fxml.FXML;
 import javafx.scene.control.Button;
 import javafx.scene.text.Text;
 
+import javax.swing.*;
 import java.net.URL;
 import java.util.ResourceBundle;
 
@@ -49,9 +51,14 @@ public class AppMainWindowContoller {
         assert exitButton != null : "fx:id=\"exitButton\" was not injected: check your FXML file 'appMainWindow.fxml'.";
 
         initializeGreetingText();
+        initializeExitButton();
     }
 
     private void initializeGreetingText(){
         greetingText.setText("Добро пожаловать, " + getUserFirstName() + " " + getUserLastName());
+    }
+
+    private void initializeExitButton(){
+        exitButton.setOnAction(UiUtil::closeWindow);
     }
 }
