@@ -12,6 +12,8 @@ import javafx.scene.control.PasswordField;
 import javafx.scene.control.TextField;
 import javafx.scene.text.Text;
 import model.Account;
+import model.AccountInfo;
+import service.AccountInfoService;
 import service.AccountService;
 
 public class SignUpWindowController {
@@ -76,8 +78,12 @@ public class SignUpWindowController {
                     if(repeatPasswordText.equals(passwordText))
                     {
                         Account newAccount = new Account(loginText, passwordText);
+
                         setCreatedAccountId(AccountService.createAccount(newAccount));
-                        AppMainWindowContoller.setUserLogin(loginText);
+
+                        AppMainWindowContoller.setUserFirstName(AccountInfoService.findAccountInfo(createdAccountId).getFirstname());
+                        AppMainWindowContoller.setUserLastName(AccountInfoService.findAccountInfo(createdAccountId).getLastname());
+
                         try {
                             UiUtil.goToNextWindow(WindowPath.SIGN_UP_ENTER_PERSONAL_WINDOW, event);
 

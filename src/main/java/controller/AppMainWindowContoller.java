@@ -8,14 +8,23 @@ import java.net.URL;
 import java.util.ResourceBundle;
 
 public class AppMainWindowContoller {
-    private static String userLogin;
+    private static String userFirstName;
+    private static String userLastName;
 
-    public static String getUserLogin() {
-        return userLogin;
+    public static String getUserFirstName() {
+        return userFirstName;
     }
 
-    public static void setUserLogin(String userLogin) {
-        AppMainWindowContoller.userLogin = userLogin;
+    public static void setUserFirstName(String userFirstName) {
+        AppMainWindowContoller.userFirstName = userFirstName;
+    }
+
+    public static String getUserLastName() {
+        return userLastName;
+    }
+
+    public static void setUserLastName(String userLastName) {
+        AppMainWindowContoller.userLastName = userLastName;
     }
 
     @FXML
@@ -39,10 +48,10 @@ public class AppMainWindowContoller {
         assert greetingText != null : "fx:id=\"greetingText\" was not injected: check your FXML file 'appMainWindow.fxml'.";
         assert exitButton != null : "fx:id=\"exitButton\" was not injected: check your FXML file 'appMainWindow.fxml'.";
 
-        initializeLoginText();
+        initializeGreetingText();
     }
 
-    private void initializeLoginText(){
-        greetingText.setText("Добро пожаловать, " + userLogin);
+    private void initializeGreetingText(){
+        greetingText.setText("Добро пожаловать, " + getUserFirstName() + " " + getUserLastName());
     }
 }

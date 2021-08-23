@@ -6,11 +6,13 @@ import java.util.ResourceBundle;
 
 import Util.UiUtil;
 import Util.WindowPath;
+import dao.AccountRepository;
 import javafx.fxml.FXML;
 import javafx.scene.control.Button;
 import javafx.scene.control.PasswordField;
 import javafx.scene.control.TextField;
 import javafx.scene.text.Text;
+import service.AccountInfoService;
 import service.AccountService;
 
 public class SignInWindowController {
@@ -77,7 +79,12 @@ public class SignInWindowController {
 
                 if(isLoginExisting && accountPassword.equals(passwordText)){
                     try {
-                        AppMainWindowContoller.setUserLogin(loginText);
+                        AccountRepository accountRepository = new AccountRepository();
+                        int accountId = accountRepository.findByLogin(loginText).getId();
+
+                        AppMainWindowContoller.setUserFirstName(AccountInfoService.findAccountInfoByLogin(accountId).getFirstname());
+                        AppMainWindowContoller.setUserLastName(AccountInfoService.findAccountInfoByLogin(accountId).getLastname());
+
                         UiUtil.goToNextWindow(WindowPath.APP_MAIN_WINDOW, event);
                     } catch (IOException e) {
                         e.printStackTrace();

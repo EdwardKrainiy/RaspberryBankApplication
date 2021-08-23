@@ -10,7 +10,9 @@
       <change beforePath="$PROJECT_DIR$/src/main/java/controller/SignInWindowController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/controller/SignInWindowController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/controller/SignUpEnterPersonalController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/controller/SignUpEnterPersonalController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/controller/SignUpWindowController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/controller/SignUpWindowController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/fxml/appMainWindow.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/fxml/appMainWindow.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/dao/AccountInfoRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dao/AccountInfoRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/dao/AccountRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dao/AccountRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/service/AccountInfoService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/service/AccountInfoService.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -189,7 +191,7 @@
       <workItem from="1629485537963" duration="9753000" />
       <workItem from="1629546999204" duration="4523000" />
       <workItem from="1629559788882" duration="896000" />
-      <workItem from="1629710282765" duration="4292000" />
+      <workItem from="1629710282765" duration="5434000" />
     </task>
     <task id="LOCAL-00001" summary="Added services.">
       <created>1628611640766</created>
@@ -324,7 +326,14 @@
       <option name="project" value="LOCAL" />
       <updated>1629713365017</updated>
     </task>
-    <option name="localTasksCounter" value="20" />
+    <task id="LOCAL-00020" summary="Added greetingsText on mainAppWindow.">
+      <created>1629714760129</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1629714760129</updated>
+    </task>
+    <option name="localTasksCounter" value="21" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -387,7 +396,8 @@
     <MESSAGE value="Sign Up now completely works." />
     <MESSAGE value="Minor changes on UI design. Now Authorization system completely works." />
     <MESSAGE value="Minor changes. Added new FXML file and new Controller." />
-    <option name="LAST_COMMIT_MESSAGE" value="Minor changes. Added new FXML file and new Controller." />
+    <MESSAGE value="Added greetingsText on mainAppWindow." />
+    <option name="LAST_COMMIT_MESSAGE" value="Added greetingsText on mainAppWindow." />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

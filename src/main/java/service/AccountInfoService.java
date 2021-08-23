@@ -10,7 +10,7 @@ public class AccountInfoService {
 
     public AccountInfoService(){};
 
-    public AccountInfo findAccountInfo(int id){
+    public static AccountInfo findAccountInfo(int id){
         return accountInfoRepository.findById(id);
     }
 
@@ -28,5 +28,9 @@ public class AccountInfoService {
 
     public void deleteAccountInfo(AccountInfo accountInfo){
         accountInfoRepository.delete(accountInfo);
+    }
+
+    public static AccountInfo findAccountInfoByLogin(int accountId){
+        return accountInfoRepository.findAccountInfoById(accountId);
     }
 }
