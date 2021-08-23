@@ -52,16 +52,21 @@ public class SignUpWindowController {
     private Button signUpBackButton;
 
     @FXML
+    private Button moveToSignInButton;
+
+    @FXML
     void initialize() {
         assert signUpLoginField != null : "fx:id=\"signUpLoginField\" was not injected: check your FXML file 'signUpWindow.fxml'.";
         assert signUpNextButton != null : "fx:id=\"signUpNextButton\" was not injected: check your FXML file 'signUpWindow.fxml'.";
         assert signUpPasswordField != null : "fx:id=\"signUpPasswordField\" was not injected: check your FXML file 'signUpWindow.fxml'.";
         assert signUpRepeatPasswordField != null : "fx:id=\"signUpRepeatPasswordField\" was not injected: check your FXML file 'signUpWindow.fxml'.";
         assert signUpErrorText != null : "fx:id=\"signUpErrorText\" was not injected: check your FXML file 'signUpWindow.fxml'.";
-        assert signUpBackButton != null : "fx:id=\"signUpCancelButton\" was not injected: check your FXML file 'signUpWindow.fxml'.";
+        assert signUpBackButton != null : "fx:id=\"signUpBackButton\" was not injected: check your FXML file 'signUpWindow.fxml'.";
+        assert moveToSignInButton != null : "fx:id=\"moveToSignInButton\" was not injected: check your FXML file 'signUpWindow.fxml'.";
 
         initializeBackButton();
         initializeEnterLoginAndPasswordButton();
+        initializeMoveToSignInButton();
     }
 
     private void initializeEnterLoginAndPasswordButton(){
@@ -105,7 +110,7 @@ public class SignUpWindowController {
         signUpNextButton.setDefaultButton(true);
     }
 
-    public void initializeBackButton(){
+    private void initializeBackButton(){
         signUpBackButton.setOnAction(event -> {
             try {
                 UiUtil.goToNextWindow(WindowPath.SIGN_IN_WINDOW, event);
@@ -114,6 +119,16 @@ public class SignUpWindowController {
             }
         });
         signUpBackButton.setCancelButton(true);
+    }
+
+    private void initializeMoveToSignInButton(){
+        moveToSignInButton.setOnAction(event -> {
+            try {
+                UiUtil.goToNextWindow(WindowPath.SIGN_IN_WINDOW, event);
+            } catch (IOException e) {
+                e.printStackTrace();
+            }
+        });
     }
 }
 

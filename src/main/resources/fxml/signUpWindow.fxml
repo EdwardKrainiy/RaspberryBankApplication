@@ -78,6 +78,11 @@
                 <Image url="@/assets/bank_icon.png" />
             </image>
         </ImageView>
+      <Button fx:id="moveToSignInButton" layoutX="562.0" layoutY="16.0" mnemonicParsing="false" prefHeight="19.0" prefWidth="111.0" style="-fx-background-color: #69a352;" text="Войти" textFill="WHITE">
+         <font>
+            <Font name="Centaur" size="17.0" />
+         </font>
+      </Button>
 
     </children>
 </AnchorPane>
