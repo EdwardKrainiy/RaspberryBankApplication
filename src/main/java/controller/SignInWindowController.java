@@ -83,10 +83,10 @@ public class SignInWindowController {
                 if(isLoginExisting && accountPassword.equals(passwordText)){
                     try {
                         AccountRepository accountRepository = new AccountRepository();
-                        int accountId = accountRepository.findByLogin(loginText).getId();
+                        int accountId = createdAccount.getId();
 
-                        AppMainWindowContoller.setUserFirstName(AccountInfoService.findAccountInfoByLogin(accountId).getFirstname());
-                        AppMainWindowContoller.setUserLastName(AccountInfoService.findAccountInfoByLogin(accountId).getLastname());
+                        AppMainWindowContoller.setUserFirstName(AccountInfoService.findAccountInfoById(accountId).getFirstname());
+                        AppMainWindowContoller.setUserLastName(AccountInfoService.findAccountInfoById(accountId).getLastname());
 
                         UiUtil.goToNextWindow(WindowPath.APP_MAIN_WINDOW, event);
                     } catch (IOException e) {

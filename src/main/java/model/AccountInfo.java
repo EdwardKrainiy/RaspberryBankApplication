@@ -7,7 +7,7 @@ import java.util.Objects;
 @Table(name = "accountinfo")
 public class AccountInfo extends BaseEntity {
 
-    @Column(name = "AccountID")
+    @Column(name = "AccountId")
     private int accountId;
 
     @Column(name = "Firstname")

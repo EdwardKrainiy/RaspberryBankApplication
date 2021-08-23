@@ -101,6 +101,10 @@ public class SignUpEnterPersonalController {
 
                             try {
                                 UiUtil.goToNextWindow(WindowPath.APP_MAIN_WINDOW, event);
+
+                                AppMainWindowContoller.setUserFirstName(AccountInfoService.findAccountInfoById(SignUpWindowController.getCreatedAccountId()).getFirstname());
+                                AppMainWindowContoller.setUserLastName(AccountInfoService.findAccountInfoById(SignUpWindowController.getCreatedAccountId()).getLastname());
+
                             } catch (IOException e) {
                                 e.printStackTrace();
                             }
