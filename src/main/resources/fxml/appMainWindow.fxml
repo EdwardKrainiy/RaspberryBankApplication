@@ -18,7 +18,7 @@
                         <Font name="System Bold" size="15.0" />
                     </font>
                 </Text>
-            <Text fx:id="greetingText" layoutX="260.0" layoutY="33.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Добро пожаловать, " textAlignment="CENTER">
+            <Text fx:id="greetingText" layoutX="141.0" layoutY="33.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Добро пожаловать, " textAlignment="CENTER" wrappingWidth="418.0703125">
                <font>
                   <Font name="System Bold" size="18.0" />
                </font>

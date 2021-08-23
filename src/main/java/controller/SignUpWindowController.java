@@ -102,6 +102,7 @@ public class SignUpWindowController {
                 signUpErrorText.setText("Введите логин и пароль!");
             }
         });
+        signUpNextButton.setDefaultButton(true);
     }
 
     public void initializeBackButton(){
@@ -112,6 +113,7 @@ public class SignUpWindowController {
                 e.printStackTrace();
             }
         });
+        signUpBackButton.setCancelButton(true);
     }
 }
 

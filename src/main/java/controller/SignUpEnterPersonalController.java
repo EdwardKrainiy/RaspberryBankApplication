@@ -78,6 +78,7 @@ public class SignUpEnterPersonalController {
                 e.printStackTrace();
             }
         });
+        signUpCancelButton.setCancelButton(true);
     }
 
     private void initializeSignUpButton(){
@@ -129,5 +130,6 @@ public class SignUpEnterPersonalController {
                 enterPersonalErrorText.setText("Введите имя!");
             }
         });
+        signUpCompleteButton.setDefaultButton(true);
     }
 }

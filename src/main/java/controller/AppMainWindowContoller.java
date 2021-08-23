@@ -60,5 +60,6 @@ public class AppMainWindowContoller {
 
     private void initializeExitButton(){
         exitButton.setOnAction(UiUtil::closeWindow);
+        exitButton.setCancelButton(true);
     }
 }

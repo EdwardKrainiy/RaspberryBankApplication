@@ -103,10 +103,12 @@ public class SignInWindowController {
                 signInErrorText.setText("Введите логин и пароль!");
             }
         });
+        signInButton.setDefaultButton(true);
     }
 
     private void initializeExitButton(){
         exitButton.setOnAction(UiUtil::closeWindow);
+        exitButton.setCancelButton(true);
     }
 }
 
