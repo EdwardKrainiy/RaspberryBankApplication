@@ -96,6 +96,12 @@ public class SignUpEnterPersonalController {
 
                             Card newCard = new Card(SignUpWindowController.getCreatedAccountId(), cardNumber, secureCode);
                             CardService.saveCard(newCard);
+
+                            try {
+                                UiUtil.goToNextWindow(WindowPath.APP_MAIN_WINDOW, event);
+                            } catch (IOException e) {
+                                e.printStackTrace();
+                            }
                         }
                         else {
                             enterPersonalErrorText.setVisible(true);

@@ -5,12 +5,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="2e40fb38-3a91-442e-a029-a5eedd6ab6a4" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/main/java/controller/AppMainWindowContoller.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/fxml/appMainWindow.fxml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Util/UiUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Util/UiUtil.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Util/WindowPath.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Util/WindowPath.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/controller/SignInWindowController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/controller/SignInWindowController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/controller/SignUpEnterPersonalController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/controller/SignUpEnterPersonalController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/fxml/signInWindow.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/fxml/signInWindow.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/fxml/signUpEnterPersonalWindow.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/fxml/signUpEnterPersonalWindow.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/fxml/signUpWindow.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/fxml/signUpWindow.fxml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -98,6 +100,7 @@
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.34896812" />
+    <property name="restartRequiresConfirmation" value="false" />
     <property name="settings.editor.selected.configurable" value="reference.settingsdialog.IDE.editor.colors.Console Font" />
   </component>
   <component name="RecentsManager">
@@ -188,7 +191,7 @@
       <workItem from="1629485537963" duration="9753000" />
       <workItem from="1629546999204" duration="4523000" />
       <workItem from="1629559788882" duration="896000" />
-      <workItem from="1629710282765" duration="1720000" />
+      <workItem from="1629710282765" duration="2905000" />
     </task>
     <task id="LOCAL-00001" summary="Added services.">
       <created>1628611640766</created>
@@ -309,7 +312,14 @@
       <option name="project" value="LOCAL" />
       <updated>1629558089664</updated>
     </task>
-    <option name="localTasksCounter" value="18" />
+    <task id="LOCAL-00018" summary="Minor changes on UI design. Now Authorization system completely works.">
+      <created>1629712225377</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1629712225377</updated>
+    </task>
+    <option name="localTasksCounter" value="19" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -370,7 +380,8 @@
     <MESSAGE value="OpenWindow method was edited. Added Cancel button. All paths was moved to WindowPath class by constants." />
     <MESSAGE value="Added enterPersonalCancelButton. Some changes on CRUD operations." />
     <MESSAGE value="Sign Up now completely works." />
-    <option name="LAST_COMMIT_MESSAGE" value="Sign Up now completely works." />
+    <MESSAGE value="Minor changes on UI design. Now Authorization system completely works." />
+    <option name="LAST_COMMIT_MESSAGE" value="Minor changes on UI design. Now Authorization system completely works." />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

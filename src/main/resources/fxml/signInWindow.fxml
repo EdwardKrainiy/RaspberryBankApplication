@@ -20,7 +20,7 @@
                   <Font size="17.0" />
                </font>
             </TextField>
-            <Button fx:id="signInButton" layoutX="295.0" layoutY="136.0" mnemonicParsing="false" prefHeight="19.0" prefWidth="111.0" style="-fx-background-color: #698fc7;" text="Войти" textFill="WHITE">
+            <Button fx:id="signInButton" layoutX="295.0" layoutY="144.0" mnemonicParsing="false" prefHeight="19.0" prefWidth="111.0" style="-fx-background-color: #698fc7;" text="Войти" textFill="WHITE">
                <font>
                   <Font size="15.0" />
                </font>
@@ -30,7 +30,7 @@
                   <Font size="17.0" />
                </font>
             </PasswordField>
-            <Text fx:id="signInErrorText" fill="RED" layoutX="169.0" layoutY="125.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" textAlignment="CENTER" visible="false" wrappingWidth="362.513671875">
+            <Text fx:id="signInErrorText" fill="RED" layoutX="169.0" layoutY="129.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" textAlignment="CENTER" visible="false" wrappingWidth="362.513671875">
                <font>
                   <Font name="System Bold" size="15.0" />
                </font>

@@ -76,7 +76,11 @@ public class SignInWindowController {
                 String accountPassword = AccountService.findByLogin(loginText).getPassword();
 
                 if(isLoginExisting && accountPassword.equals(passwordText)){
-                    System.out.println("Hello!");
+                    try {
+                        UiUtil.goToNextWindow(WindowPath.APP_MAIN_WINDOW, event);
+                    } catch (IOException e) {
+                        e.printStackTrace();
+                    }
                 }
                 else{
                     signInErrorText.setVisible(true);
