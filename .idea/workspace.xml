@@ -6,13 +6,11 @@
   <component name="ChangeListManager">
     <list default="true" id="2e40fb38-3a91-442e-a029-a5eedd6ab6a4" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/controller/SignUpEnterPersonalController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/controller/SignUpEnterPersonalController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/controller/SignUpWindowController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/controller/SignUpWindowController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/dao/EntityRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dao/EntityRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/model/Card.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/model/Card.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/service/AccountInfoService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/service/AccountInfoService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/service/CardService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/service/CardService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Util/UiUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Util/UiUtil.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/controller/SignInWindowController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/controller/SignInWindowController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/fxml/signInWindow.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/fxml/signInWindow.fxml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/fxml/signUpEnterPersonalWindow.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/fxml/signUpEnterPersonalWindow.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/fxml/signUpWindow.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/fxml/signUpWindow.fxml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -188,7 +186,9 @@
       <workItem from="1629281752605" duration="9208000" />
       <workItem from="1629307938710" duration="73000" />
       <workItem from="1629485537963" duration="9753000" />
-      <workItem from="1629546999204" duration="3705000" />
+      <workItem from="1629546999204" duration="4523000" />
+      <workItem from="1629559788882" duration="896000" />
+      <workItem from="1629710282765" duration="1720000" />
     </task>
     <task id="LOCAL-00001" summary="Added services.">
       <created>1628611640766</created>
@@ -302,7 +302,14 @@
       <option name="project" value="LOCAL" />
       <updated>1629543163272</updated>
     </task>
-    <option name="localTasksCounter" value="17" />
+    <task id="LOCAL-00017" summary="Sign Up now completely works.">
+      <created>1629558089664</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1629558089664</updated>
+    </task>
+    <option name="localTasksCounter" value="18" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -362,7 +369,8 @@
     <MESSAGE value="Minor changes." />
     <MESSAGE value="OpenWindow method was edited. Added Cancel button. All paths was moved to WindowPath class by constants." />
     <MESSAGE value="Added enterPersonalCancelButton. Some changes on CRUD operations." />
-    <option name="LAST_COMMIT_MESSAGE" value="Added enterPersonalCancelButton. Some changes on CRUD operations." />
+    <MESSAGE value="Sign Up now completely works." />
+    <option name="LAST_COMMIT_MESSAGE" value="Sign Up now completely works." />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

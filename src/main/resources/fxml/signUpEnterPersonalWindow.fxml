@@ -44,12 +44,12 @@
                   <Font size="17.0" />
                </font>
             </TextField>
-            <Button fx:id="signUpCompleteButton" layoutX="268.0" layoutY="233.0" mnemonicParsing="false" prefHeight="31.0" prefWidth="164.0" style="-fx-background-color: #698fc7;" text="Зарегистрироваться" textFill="WHITE">
+            <Button fx:id="signUpCompleteButton" layoutX="268.0" layoutY="233.0" mnemonicParsing="false" prefHeight="31.0" prefWidth="164.0" style="-fx-background-color: #69a352;" text="Зарегистрироваться" textFill="WHITE">
                <font>
                   <Font size="15.0" />
                </font>
             </Button>
-            <Button fx:id="signUpCancelButton" layoutX="268.0" layoutY="276.0" mnemonicParsing="false" prefHeight="31.0" prefWidth="164.0" style="-fx-background-color: #698fc7;" text="Отмена" textFill="WHITE">
+            <Button fx:id="signUpCancelButton" layoutX="268.0" layoutY="276.0" mnemonicParsing="false" prefHeight="31.0" prefWidth="164.0" style="-fx-background-color: #ba2727;" text="Отмена" textFill="WHITE">
                <font>
                   <Font size="15.0" />
                </font>

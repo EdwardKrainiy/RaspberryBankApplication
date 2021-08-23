@@ -40,11 +40,26 @@
                   <Font name="System Bold" size="15.0" />
                </font>
             </Text>
-            <Button fx:id="signUpBackButton" layoutX="295.0" layoutY="263.0" mnemonicParsing="false" prefHeight="19.0" prefWidth="111.0" style="-fx-background-color: #698fc7;" text="Назад" textFill="WHITE">
+            <Button fx:id="signUpBackButton" layoutX="295.0" layoutY="263.0" mnemonicParsing="false" prefHeight="19.0" prefWidth="111.0" style="-fx-background-color: #ba2727;" text="Назад" textFill="WHITE">
                <font>
                   <Font size="15.0" />
                </font>
             </Button>
+            <Text fill="RED" layoutX="494.0" layoutY="45.0" strokeType="OUTSIDE" strokeWidth="0.0" text="*">
+               <font>
+                  <Font size="30.0" />
+               </font>
+            </Text>
+            <Text fill="RED" layoutX="494.0" layoutY="113.0" strokeType="OUTSIDE" strokeWidth="0.0" text="*">
+               <font>
+                  <Font size="30.0" />
+               </font>
+            </Text>
+            <Text fill="RED" layoutX="494.0" layoutY="168.0" strokeType="OUTSIDE" strokeWidth="0.0" text="*">
+               <font>
+                  <Font size="30.0" />
+               </font>
+            </Text>
             </children>
         </AnchorPane>
         <Label layoutX="78.0" layoutY="6.0" prefHeight="60.0" prefWidth="272.0" text="Bank App" textFill="WHITE">

@@ -13,14 +13,14 @@
 <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="700.0" style="-fx-background-color: #afc9f0;" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.SignInWindowController">
    <children>
       <AnchorPane layoutX="11.0" layoutY="66.0" prefHeight="1.0" prefWidth="678.0" style="-fx-background-color: #00497d;" />
-      <AnchorPane layoutY="198.0" prefHeight="152.0" prefWidth="700.0" style="-fx-background-color: #c5dbfc;">
+      <AnchorPane layoutY="198.0" prefHeight="181.0" prefWidth="700.0" style="-fx-background-color: #c5dbfc;">
          <children>
             <TextField fx:id="signInLoginField" layoutX="179.0" layoutY="10.0" prefHeight="38.0" prefWidth="342.0" promptText="Логин">
                <font>
                   <Font size="17.0" />
                </font>
             </TextField>
-            <Button fx:id="signInButton" layoutX="295.0" layoutY="114.0" mnemonicParsing="false" prefHeight="19.0" prefWidth="111.0" style="-fx-background-color: #698fc7;" text="Войти" textFill="WHITE">
+            <Button fx:id="signInButton" layoutX="295.0" layoutY="136.0" mnemonicParsing="false" prefHeight="19.0" prefWidth="111.0" style="-fx-background-color: #698fc7;" text="Войти" textFill="WHITE">
                <font>
                   <Font size="15.0" />
                </font>
@@ -30,6 +30,11 @@
                   <Font size="17.0" />
                </font>
             </PasswordField>
+            <Text fx:id="signInErrorText" fill="RED" layoutX="169.0" layoutY="125.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" textAlignment="CENTER" visible="false" wrappingWidth="362.513671875">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+            </Text>
          </children>
       </AnchorPane>
       <Label layoutX="78.0" layoutY="6.0" prefHeight="60.0" prefWidth="272.0" text="Bank App" textFill="WHITE">
@@ -37,7 +42,7 @@
             <Font name="Californian FB Bold" size="40.0" />
          </font>
       </Label>
-      <Button fx:id="signUpButton" layoutX="527.0" layoutY="17.0" mnemonicParsing="false" prefHeight="38.0" prefWidth="159.0" style="-fx-background-color: #698fc7;" text="Регистрация" textFill="WHITE">
+      <Button fx:id="signUpButton" layoutX="527.0" layoutY="17.0" mnemonicParsing="false" prefHeight="38.0" prefWidth="159.0" style="-fx-background-color: #69a352;" text="Регистрация" textFill="WHITE">
          <font>
             <Font name="Centaur" size="17.0" />
          </font>
@@ -53,6 +58,11 @@
             <Image url="@/assets/bank_icon.png" />
          </image>
       </ImageView>
+      <Button fx:id="exitButton" layoutX="295.0" layoutY="418.0" mnemonicParsing="false" prefHeight="19.0" prefWidth="111.0" style="-fx-background-color: #ba2727;" text="Выход" textFill="WHITE">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Button>
       
    </children>
 </AnchorPane>
