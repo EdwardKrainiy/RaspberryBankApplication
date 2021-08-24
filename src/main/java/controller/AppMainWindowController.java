@@ -10,6 +10,7 @@ import java.net.URL;
 import java.util.ResourceBundle;
 
 public class AppMainWindowController {
+
     private static String userFirstName;
     private static String userLastName;
     private static int userId;
@@ -91,6 +92,12 @@ public class AppMainWindowController {
 
         checkBalanceButton.setOnAction(event -> {
             UiUtil.createFadeTextAnimation(balanceText, 1, 1.5).playFromStart();
+        });
+    }
+
+    private void initializeTransactionButton(){
+        transactionButton.setOnAction(event -> {
+
         });
     }
 }

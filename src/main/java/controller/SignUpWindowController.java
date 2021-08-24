@@ -12,7 +12,6 @@ import javafx.scene.control.PasswordField;
 import javafx.scene.control.TextField;
 import javafx.scene.text.Text;
 import model.Account;
-import service.AccountInfoService;
 import service.AccountService;
 
 public class SignUpWindowController {
