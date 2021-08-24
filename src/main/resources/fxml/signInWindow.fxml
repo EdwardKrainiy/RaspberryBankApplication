@@ -58,7 +58,7 @@
             <Image url="@/assets/bank_icon.png" />
          </image>
       </ImageView>
-      <Button fx:id="exitButton" layoutX="295.0" layoutY="418.0" mnemonicParsing="false" prefHeight="19.0" prefWidth="111.0" style="-fx-background-color: #ba2727;" text="Выход" textFill="WHITE">
+      <Button fx:id="exitButton" layoutX="295.0" layoutY="418.0" mnemonicParsing="false" prefHeight="19.0" prefWidth="111.0" style="-fx-background-color: #ba2727;" text="Закрыть" textFill="WHITE">
          <font>
             <Font size="15.0" />
          </font>

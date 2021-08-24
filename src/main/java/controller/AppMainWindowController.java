@@ -51,6 +51,9 @@ public class AppMainWindowController {
     private Button transactionButton;
 
     @FXML
+    private Text signInErrorText;
+
+    @FXML
     private Text greetingText;
 
     @FXML
@@ -60,20 +63,30 @@ public class AppMainWindowController {
     private Text balanceText;
 
     @FXML
+    private Button accountRefillingButton;
+
+    @FXML
     private Button exitButton;
+
+    @FXML
+    private Button signOutButton;
 
     @FXML
     void initialize() {
         assert transactionButton != null : "fx:id=\"transactionButton\" was not injected: check your FXML file 'appMainWindow.fxml'.";
+        assert signInErrorText != null : "fx:id=\"signInErrorText\" was not injected: check your FXML file 'appMainWindow.fxml'.";
         assert greetingText != null : "fx:id=\"greetingText\" was not injected: check your FXML file 'appMainWindow.fxml'.";
         assert checkBalanceButton != null : "fx:id=\"checkBalanceButton\" was not injected: check your FXML file 'appMainWindow.fxml'.";
         assert balanceText != null : "fx:id=\"balanceText\" was not injected: check your FXML file 'appMainWindow.fxml'.";
+        assert accountRefillingButton != null : "fx:id=\"accountRefillingButton\" was not injected: check your FXML file 'appMainWindow.fxml'.";
         assert exitButton != null : "fx:id=\"exitButton\" was not injected: check your FXML file 'appMainWindow.fxml'.";
+        assert signOutButton != null : "fx:id=\"signOutButton\" was not injected: check your FXML file 'appMainWindow.fxml'.";
 
         initializeGreetingText();
         initializeCheckBalanceButton();
         initializeExitButton();
         initializeTransactionButton();
+        initializeSignOutButton();
     }
 
     private void initializeGreetingText(){
@@ -98,6 +111,16 @@ public class AppMainWindowController {
         transactionButton.setOnAction(event -> {
             try {
                 UiUtil.goToNextWindow(WindowPath.APP_TRANSACTION_WINDOW, event);
+            } catch (IOException e) {
+                e.printStackTrace();
+            }
+        });
+    }
+
+    private void initializeSignOutButton(){
+        signOutButton.setOnAction(event -> {
+            try {
+                UiUtil.goToNextWindow(WindowPath.SIGN_IN_WINDOW, event);
             } catch (IOException e) {
                 e.printStackTrace();
             }

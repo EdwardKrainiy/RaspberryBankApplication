@@ -5,9 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="2e40fb38-3a91-442e-a029-a5eedd6ab6a4" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/controller/AppTransactionWindowController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/controller/AppTransactionWindowController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/fxml/appTransaсtionWindow.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/fxml/appTransaсtionWindow.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/controller/AppMainWindowController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/controller/AppMainWindowController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/fxml/appMainWindow.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/fxml/appMainWindow.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/fxml/signInWindow.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/fxml/signInWindow.fxml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -189,7 +189,7 @@
       <workItem from="1629559788882" duration="896000" />
       <workItem from="1629710282765" duration="5959000" />
       <workItem from="1629722387123" duration="3168000" />
-      <workItem from="1629796483314" duration="15428000" />
+      <workItem from="1629796483314" duration="15744000" />
     </task>
     <task id="LOCAL-00001" summary="Added services.">
       <created>1628611640766</created>
@@ -401,7 +401,14 @@
       <option name="project" value="LOCAL" />
       <updated>1629813147999</updated>
     </task>
-    <option name="localTasksCounter" value="31" />
+    <task id="LOCAL-00031" summary="Minor changes on transaction function.">
+      <created>1629813576475</created>
+      <option name="number" value="00031" />
+      <option name="presentableId" value="LOCAL-00031" />
+      <option name="project" value="LOCAL" />
+      <updated>1629813576475</updated>
+    </task>
+    <option name="localTasksCounter" value="32" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -445,7 +452,6 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Some project structure changes." />
     <MESSAGE value="Major changes on DB structure." />
     <MESSAGE value="Minor changes on hibernate.cfg.xml file mappings." />
     <MESSAGE value="Major changes on Contollers." />
@@ -470,7 +476,8 @@
     <MESSAGE value="Working on transaction function." />
     <MESSAGE value="Minor changes on AppTransactionWindowController." />
     <MESSAGE value="Added transaction function." />
-    <option name="LAST_COMMIT_MESSAGE" value="Added transaction function." />
+    <MESSAGE value="Minor changes on transaction function." />
+    <option name="LAST_COMMIT_MESSAGE" value="Minor changes on transaction function." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
