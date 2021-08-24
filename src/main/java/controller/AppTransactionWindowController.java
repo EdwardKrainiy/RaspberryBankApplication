@@ -6,6 +6,8 @@ import javafx.fxml.FXML;
 import javafx.scene.control.Button;
 import javafx.scene.control.TextField;
 import javafx.scene.text.Text;
+import model.Account;
+import service.AccountService;
 
 import java.io.IOException;
 import java.net.URL;
@@ -74,17 +76,41 @@ public class AppTransactionWindowController {
 
     private void initializeSubmitTransactionButton(){
     submitTransactionButton.setOnAction(event -> {
+
         String recipientLogin = recipientLoginField.getText();
         String secureCode = secureCodeField.getText();
 
         double transferAmount;
-        if(transferAmountField.getText().matches("\\d+\\.\\d+")){
-            transferAmount = Double.parseDouble(transferAmountField.getText());
+        if(!recipientLogin.equals("")){
+
+            Account recipientAccount = AccountService.findByLogin(recipientLogin);
+
+            if(recipientAccount != null){
+                if(!secureCode.equals("")){
+                    if(transferAmountField.getText().matches("\\d+(?:\\.\\d+)?")){
+                        transferAmount = Double.parseDouble(transferAmountField.getText());
+                        System.out.println("Good");
+                    }
+                    else{
+                        errorText.setText("Некорректное значение в поле 'Сумма перевода'!");
+                        errorText.setVisible(true);
+                        transferAmountField.setText("");
+                    }
+                }
+                else{
+                    errorText.setText("Введите CVV-код!");
+                    errorText.setVisible(true);
+                }
+            }
+            else{
+                errorText.setText("Логин получателя введен неверно!");
+                errorText.setVisible(true);
+                recipientLoginField.setText("");
+            }
         }
         else{
-            errorText.setText("Некорректное значение в поле 'Сумма перевода'!");
+            errorText.setText("Введите логин!");
             errorText.setVisible(true);
-            transferAmountField.setText("");
         }
     });
     }
