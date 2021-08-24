@@ -2,12 +2,18 @@ package controller;
 
 import Util.UiUtil;
 import Util.WindowPath;
+import dao.AccountInfoRepository;
+import dao.CardRepository;
 import javafx.fxml.FXML;
 import javafx.scene.control.Button;
 import javafx.scene.control.TextField;
 import javafx.scene.text.Text;
 import model.Account;
+import model.AccountInfo;
+import model.Card;
+import service.AccountInfoService;
 import service.AccountService;
+import service.CardService;
 
 import java.io.IOException;
 import java.net.URL;
@@ -75,26 +81,52 @@ public class AppTransactionWindowController {
     }
 
     private void initializeSubmitTransactionButton(){
-    submitTransactionButton.setOnAction(event -> {
+        submitTransactionButton.setOnAction(event -> {
 
         String recipientLogin = recipientLoginField.getText();
         String secureCode = secureCodeField.getText();
 
+        AccountInfo userAccountInfo = new AccountInfoRepository().findById(AppMainWindowController.getUserId());
+        Account recipientAccount = AccountService.findByLogin(recipientLogin);
+
+        boolean isRecipientAccountExists = recipientAccount != null;
+
         double transferAmount;
+        double userBalance = userAccountInfo.getBalance();
+
         if(!recipientLogin.equals("")){
 
-            Account recipientAccount = AccountService.findByLogin(recipientLogin);
+            if(isRecipientAccountExists){
 
-            if(recipientAccount != null){
+                int recipientAccountId = recipientAccount.getId();
+                AccountInfo recipientAccountInfo = AccountInfoService.findAccountInfoById(recipientAccountId);
+                Card recipientCard = CardService.findCardByAccountId(recipientAccountInfo.getAccountId());
+
                 if(!secureCode.equals("")){
-                    if(transferAmountField.getText().matches("\\d+(?:\\.\\d+)?")){
-                        transferAmount = Double.parseDouble(transferAmountField.getText());
-                        System.out.println("Good");
+                    if(secureCode.equals(recipientCard.getSecureCode())){
+                        if (transferAmountField.getText().matches("\\d+(?:\\.\\d+)?")) {
+                            transferAmount = Double.parseDouble(transferAmountField.getText());
+                            if(!(userBalance - transferAmount < 0)){
+                                AccountInfoService accountInfoService = new AccountInfoService();
+                                recipientAccountInfo.setBalance(recipientAccountInfo.getBalance() + transferAmount);
+                                userAccountInfo.setBalance(userAccountInfo.getBalance() - transferAmount);
+                                accountInfoService.updateAccountInfo(recipientAccountInfo);
+                                accountInfoService.updateAccountInfo(userAccountInfo);
+                            }
+                            else{
+                                errorText.setText("Недостаточно средств!");
+                                errorText.setVisible(true);
+                                transferAmountField.setText("");
+                            }
+                        } else {
+                            errorText.setText("Некорректное значение в поле 'Сумма перевода'!");
+                            errorText.setVisible(true);
+                            transferAmountField.setText("");
+                        }
                     }
                     else{
-                        errorText.setText("Некорректное значение в поле 'Сумма перевода'!");
+                        errorText.setText("CVV-код получателя введен неверно!");
                         errorText.setVisible(true);
-                        transferAmountField.setText("");
                     }
                 }
                 else{
@@ -106,6 +138,7 @@ public class AppTransactionWindowController {
                 errorText.setText("Логин получателя введен неверно!");
                 errorText.setVisible(true);
                 recipientLoginField.setText("");
+                System.out.println("Hello");
             }
         }
         else{

@@ -86,7 +86,7 @@ public class AppMainWindowController {
     }
 
     private void initializeCheckBalanceButton(){
-        int userBalance = AccountInfoService.findAccountInfoById(getUserId()).getBalance();
+        double userBalance = AccountInfoService.findAccountInfoById(getUserId()).getBalance();
         balanceText.setText("Ваш баланс: " + userBalance);
 
         checkBalanceButton.setOnAction(event -> {

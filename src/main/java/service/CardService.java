@@ -10,8 +10,12 @@ public class CardService {
 
     public CardService(){};
 
-    public Card findCard(int id){
+    public static Card findCard(int id){
         return cardRepository.findById(id);
+    }
+
+    public static Card findCardByAccountId(int accountId){
+        return cardRepository.findByAccountId(accountId);
     }
 
     public List<Card> findAllCards(){

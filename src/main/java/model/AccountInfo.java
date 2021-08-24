@@ -23,7 +23,7 @@ public class AccountInfo extends BaseEntity {
     private String phoneNumber;
 
     @Column(name = "Balance")
-    private int balance;
+    private double balance;
 
     public int getAccountId() {
         return accountId;
@@ -65,11 +65,11 @@ public class AccountInfo extends BaseEntity {
         this.phoneNumber = phoneNumber;
     }
 
-    public int getBalance() {
+    public double getBalance() {
         return balance;
     }
 
-    public void setBalance(int balance) {
+    public void setBalance(double balance) {
         this.balance = balance;
     }
 
@@ -86,7 +86,7 @@ public class AccountInfo extends BaseEntity {
         return Objects.hash(id, accountId, firstname, lastname, patronymic, phoneNumber, balance);
     }
 
-    public AccountInfo(int accountId, String firstname, String lastname, String patronymic, String phoneNumber, int balance) {
+    public AccountInfo(int accountId, String firstname, String lastname, String patronymic, String phoneNumber, double balance) {
         this.accountId = accountId;
         this.firstname = firstname;
         this.lastname = lastname;
