@@ -5,12 +5,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="2e40fb38-3a91-442e-a029-a5eedd6ab6a4" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/controller/AppTransactionWindowController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/fxml/appTransaсtionWindow.fxml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Util/WindowPath.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Util/WindowPath.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/controller/AppMainWindowController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/controller/AppMainWindowController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/controller/SignUpWindowController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/controller/SignUpWindowController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/fxml/appMainWindow.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/fxml/appMainWindow.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/controller/AppTransactionWindowController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/controller/AppTransactionWindowController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/controller/SignInWindowController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/controller/SignInWindowController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/fxml/appTransaсtionWindow.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/fxml/appTransaсtionWindow.fxml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -192,7 +192,7 @@
       <workItem from="1629559788882" duration="896000" />
       <workItem from="1629710282765" duration="5959000" />
       <workItem from="1629722387123" duration="3168000" />
-      <workItem from="1629796483314" duration="3973000" />
+      <workItem from="1629796483314" duration="8460000" />
     </task>
     <task id="LOCAL-00001" summary="Added services.">
       <created>1628611640766</created>
@@ -376,7 +376,14 @@
       <option name="project" value="LOCAL" />
       <updated>1629799091640</updated>
     </task>
-    <option name="localTasksCounter" value="27" />
+    <task id="LOCAL-00027" summary="Some features.">
+      <created>1629800561857</created>
+      <option name="number" value="00027" />
+      <option name="presentableId" value="LOCAL-00027" />
+      <option name="project" value="LOCAL" />
+      <updated>1629800561857</updated>
+    </task>
+    <option name="localTasksCounter" value="28" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -420,7 +427,6 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Fixed hibernate.cfg.xml file. Connection is working." />
     <MESSAGE value="Added Balance field on Account table." />
     <MESSAGE value="Minor changes on field names." />
     <MESSAGE value="Added app window and bank icon on signIn window." />
@@ -445,7 +451,18 @@
     <MESSAGE value="Added default actions for buttons. Now you can control app by keyboard." />
     <MESSAGE value="Added moveToSignInButton on signUpWindow." />
     <MESSAGE value="Added balanceButton and fadeTextAnimation." />
-    <option name="LAST_COMMIT_MESSAGE" value="Added balanceButton and fadeTextAnimation." />
+    <MESSAGE value="Some features." />
+    <option name="LAST_COMMIT_MESSAGE" value="Some features." />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <breakpoint enabled="true" type="java-exception">
+          <properties class="java.lang.NullPointerException" package="java.lang" />
+          <option name="timeStamp" value="1" />
+        </breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

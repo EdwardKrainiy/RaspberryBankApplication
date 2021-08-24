@@ -77,23 +77,23 @@ public class SignInWindowController {
 
             if(!loginText.equals("") && !passwordText.equals("")){
 
-                boolean isLoginExisting = !createdAccount.equals(null);
+                boolean isLoginExisting = createdAccount == null;
 
-                String accountPassword = createdAccount.getPassword();
+                if(!isLoginExisting){
+                    String accountPassword = createdAccount.getPassword();
+                    if(accountPassword.equals(passwordText)){
+                        try {
+                            int accountId = createdAccount.getId();
 
-                if(isLoginExisting && accountPassword.equals(passwordText)){
-                    try {
-                        AccountRepository accountRepository = new AccountRepository();
-                        int accountId = createdAccount.getId();
+                            AccountInfo foundedAccountInfoById = AccountInfoService.findAccountInfoById(accountId);
+                            AppMainWindowController.setUserFirstName(foundedAccountInfoById.getFirstname());
+                            AppMainWindowController.setUserLastName(foundedAccountInfoById.getLastname());
+                            AppMainWindowController.setUserId(accountId);
 
-                        AccountInfo foundedAccountInfoById = AccountInfoService.findAccountInfoById(accountId);
-                        AppMainWindowController.setUserFirstName(foundedAccountInfoById.getFirstname());
-                        AppMainWindowController.setUserLastName(foundedAccountInfoById.getLastname());
-                        AppMainWindowController.setUserId(accountId);
-
-                        UiUtil.goToNextWindow(WindowPath.APP_MAIN_WINDOW, event);
-                    } catch (IOException e) {
-                        e.printStackTrace();
+                            UiUtil.goToNextWindow(WindowPath.APP_MAIN_WINDOW, event);
+                        } catch (IOException e) {
+                            e.printStackTrace();
+                        }
                     }
                 }
                 else{

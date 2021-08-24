@@ -1,11 +1,13 @@
 package controller;
 
 import Util.UiUtil;
+import Util.WindowPath;
 import javafx.fxml.FXML;
 import javafx.scene.control.Button;
 import javafx.scene.text.Text;
 import service.AccountInfoService;
 
+import java.io.IOException;
 import java.net.URL;
 import java.util.ResourceBundle;
 
@@ -49,9 +51,6 @@ public class AppMainWindowController {
     private Button transactionButton;
 
     @FXML
-    private Text signInErrorText;
-
-    @FXML
     private Text greetingText;
 
     @FXML
@@ -66,15 +65,15 @@ public class AppMainWindowController {
     @FXML
     void initialize() {
         assert transactionButton != null : "fx:id=\"transactionButton\" was not injected: check your FXML file 'appMainWindow.fxml'.";
-        assert signInErrorText != null : "fx:id=\"signInErrorText\" was not injected: check your FXML file 'appMainWindow.fxml'.";
         assert greetingText != null : "fx:id=\"greetingText\" was not injected: check your FXML file 'appMainWindow.fxml'.";
         assert checkBalanceButton != null : "fx:id=\"checkBalanceButton\" was not injected: check your FXML file 'appMainWindow.fxml'.";
         assert balanceText != null : "fx:id=\"balanceText\" was not injected: check your FXML file 'appMainWindow.fxml'.";
         assert exitButton != null : "fx:id=\"exitButton\" was not injected: check your FXML file 'appMainWindow.fxml'.";
 
         initializeGreetingText();
-        initializeExitButton();
         initializeCheckBalanceButton();
+        initializeExitButton();
+        initializeTransactionButton();
     }
 
     private void initializeGreetingText(){
@@ -97,7 +96,11 @@ public class AppMainWindowController {
 
     private void initializeTransactionButton(){
         transactionButton.setOnAction(event -> {
-
+            try {
+                UiUtil.goToNextWindow(WindowPath.APP_TRANSACTION_WINDOW, event);
+            } catch (IOException e) {
+                e.printStackTrace();
+            }
         });
     }
 }

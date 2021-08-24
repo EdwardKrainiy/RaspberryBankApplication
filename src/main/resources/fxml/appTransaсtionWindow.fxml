@@ -9,11 +9,16 @@
 <?import javafx.scene.text.Font?>
 <?import javafx.scene.text.Text?>
 
-<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="700.0" style="-fx-background-color: #afc9f0;" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.AppMainWindowController">
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="700.0" style="-fx-background-color: #afc9f0;" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.AppTransactionWindowController">
     <children>
         <AnchorPane layoutX="11.0" layoutY="66.0" prefHeight="1.0" prefWidth="678.0" style="-fx-background-color: #00497d;" />
-        <AnchorPane layoutY="105.0" prefHeight="290.0" prefWidth="700.0" style="-fx-background-color: #c5dbfc;">
+        <AnchorPane layoutY="105.0" prefHeight="310.0" prefWidth="700.0" style="-fx-background-color: #c5dbfc;">
             <children>
+            <TextField fx:id="transferAmountField" layoutX="181.0" layoutY="176.0" prefHeight="39.0" prefWidth="339.0" promptText="Сумма перевода">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </TextField>
                 <Text fx:id="signInErrorText" fill="RED" layoutX="169.0" layoutY="129.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" textAlignment="CENTER" visible="false" wrappingWidth="362.513671875">
                     <font>
                         <Font name="System Bold" size="15.0" />
@@ -29,21 +34,26 @@
                   <Font name="System Bold" size="20.0" />
                </font>
             </Text>
-            <TextField fx:id="cardNumberField" layoutX="181.0" layoutY="62.0" prefHeight="31.0" prefWidth="339.0" promptText="Номер карты">
+            <TextField fx:id="recipientLoginField" layoutX="181.0" layoutY="62.0" prefHeight="31.0" prefWidth="339.0" promptText="Логин получателя">
                <font>
                   <Font size="18.0" />
                </font>
             </TextField>
-            <TextField fx:id="secureCodeField" layoutX="181.0" layoutY="126.0" prefHeight="31.0" prefWidth="339.0" promptText="CVV-код получателя">
+            <TextField fx:id="secureCodeField" layoutX="181.0" layoutY="113.0" prefHeight="31.0" prefWidth="339.0" promptText="CVV-код получателя">
                <font>
                   <Font size="18.0" />
                </font>
             </TextField>
-            <Button fx:id="submitTransactionButton" layoutX="295.0" layoutY="233.0" mnemonicParsing="false" prefHeight="31.0" prefWidth="111.0" style="-fx-background-color: #69a352;" text="Перевести" textFill="WHITE">
+            <Button fx:id="submitTransactionButton" layoutX="295.0" layoutY="263.0" mnemonicParsing="false" prefHeight="31.0" prefWidth="111.0" style="-fx-background-color: #69a352;" text="Перевести" textFill="WHITE">
                <font>
                   <Font size="15.0" />
                </font>
             </Button>
+            <Text fx:id="errorText" fill="RED" layoutX="90.0" layoutY="244.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" textAlignment="CENTER" visible="false" wrappingWidth="520.025390625">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+            </Text>
             </children>
         </AnchorPane>
         <Label layoutX="78.0" layoutY="6.0" prefHeight="60.0" prefWidth="272.0" text="Bank App" textFill="WHITE">
@@ -57,7 +67,7 @@
                 <Image url="@/assets/bank_icon.png" />
             </image>
         </ImageView>
-        <Button fx:id="backButton" layoutX="295.0" layoutY="418.0" mnemonicParsing="false" prefHeight="19.0" prefWidth="111.0" style="-fx-background-color: #ba2727;" text="Назад" textFill="WHITE">
+        <Button fx:id="backButton" layoutX="295.0" layoutY="421.0" mnemonicParsing="false" prefHeight="19.0" prefWidth="111.0" style="-fx-background-color: #ba2727;" text="Назад" textFill="WHITE">
             <font>
                 <Font size="15.0" />
             </font>
