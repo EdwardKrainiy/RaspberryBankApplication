@@ -52,6 +52,9 @@ public class AppTransactionWindowController {
     private Text errorText;
 
     @FXML
+    private Text sucessfulText;
+
+    @FXML
     private Button backButton;
 
     @FXML
@@ -64,6 +67,7 @@ public class AppTransactionWindowController {
         assert secureCodeField != null : "fx:id=\"secureCodeField\" was not injected: check your FXML file 'appTransaсtionWindow.fxml'.";
         assert submitTransactionButton != null : "fx:id=\"submitTransactionButton\" was not injected: check your FXML file 'appTransaсtionWindow.fxml'.";
         assert errorText != null : "fx:id=\"errorText\" was not injected: check your FXML file 'appTransaсtionWindow.fxml'.";
+        assert sucessfulText != null : "fx:id=\"sucessfulText\" was not injected: check your FXML file 'appTransaсtionWindow.fxml'.";
         assert backButton != null : "fx:id=\"backButton\" was not injected: check your FXML file 'appTransaсtionWindow.fxml'.";
 
         initializeBackButton();
@@ -71,6 +75,7 @@ public class AppTransactionWindowController {
     }
 
     private void initializeBackButton(){
+        backButton.setCancelButton(true);
         backButton.setOnAction(event -> {
             try {
                 UiUtil.goToNextWindow(WindowPath.APP_MAIN_WINDOW, event);
@@ -81,6 +86,7 @@ public class AppTransactionWindowController {
     }
 
     private void initializeSubmitTransactionButton(){
+        submitTransactionButton.setDefaultButton(true);
         submitTransactionButton.setOnAction(event -> {
 
         String recipientLogin = recipientLoginField.getText();
@@ -112,6 +118,10 @@ public class AppTransactionWindowController {
                                 userAccountInfo.setBalance(userAccountInfo.getBalance() - transferAmount);
                                 accountInfoService.updateAccountInfo(recipientAccountInfo);
                                 accountInfoService.updateAccountInfo(userAccountInfo);
+
+                                errorText.setVisible(false);
+                                UiUtil.createFadeTextAnimation(sucessfulText, 1, 1.5).playFromStart();
+
                             }
                             else{
                                 errorText.setText("Недостаточно средств!");
@@ -138,7 +148,6 @@ public class AppTransactionWindowController {
                 errorText.setText("Логин получателя введен неверно!");
                 errorText.setVisible(true);
                 recipientLoginField.setText("");
-                System.out.println("Hello");
             }
         }
         else{

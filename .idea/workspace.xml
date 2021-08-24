@@ -6,11 +6,8 @@
   <component name="ChangeListManager">
     <list default="true" id="2e40fb38-3a91-442e-a029-a5eedd6ab6a4" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/controller/AppMainWindowController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/controller/AppMainWindowController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/controller/AppTransactionWindowController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/controller/AppTransactionWindowController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/dao/CardRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dao/CardRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/model/AccountInfo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/model/AccountInfo.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/service/CardService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/service/CardService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/fxml/appTransaсtionWindow.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/fxml/appTransaсtionWindow.fxml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -192,7 +189,7 @@
       <workItem from="1629559788882" duration="896000" />
       <workItem from="1629710282765" duration="5959000" />
       <workItem from="1629722387123" duration="3168000" />
-      <workItem from="1629796483314" duration="14991000" />
+      <workItem from="1629796483314" duration="15428000" />
     </task>
     <task id="LOCAL-00001" summary="Added services.">
       <created>1628611640766</created>
@@ -397,7 +394,14 @@
       <option name="project" value="LOCAL" />
       <updated>1629807648611</updated>
     </task>
-    <option name="localTasksCounter" value="30" />
+    <task id="LOCAL-00030" summary="Added transaction function.">
+      <created>1629813147999</created>
+      <option name="number" value="00030" />
+      <option name="presentableId" value="LOCAL-00030" />
+      <option name="project" value="LOCAL" />
+      <updated>1629813147999</updated>
+    </task>
+    <option name="localTasksCounter" value="31" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -441,7 +445,6 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Added app window and bank icon on signIn window." />
     <MESSAGE value="Some project structure changes." />
     <MESSAGE value="Major changes on DB structure." />
     <MESSAGE value="Minor changes on hibernate.cfg.xml file mappings." />
@@ -466,7 +469,8 @@
     <MESSAGE value="Some features." />
     <MESSAGE value="Working on transaction function." />
     <MESSAGE value="Minor changes on AppTransactionWindowController." />
-    <option name="LAST_COMMIT_MESSAGE" value="Minor changes on AppTransactionWindowController." />
+    <MESSAGE value="Added transaction function." />
+    <option name="LAST_COMMIT_MESSAGE" value="Added transaction function." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
