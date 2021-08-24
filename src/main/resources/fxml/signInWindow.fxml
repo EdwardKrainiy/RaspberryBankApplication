@@ -42,7 +42,7 @@
             <Font name="Californian FB Bold" size="40.0" />
          </font>
       </Label>
-      <Button fx:id="signUpButton" layoutX="527.0" layoutY="17.0" mnemonicParsing="false" prefHeight="38.0" prefWidth="159.0" style="-fx-background-color: #69a352;" text="Регистрация" textFill="WHITE">
+      <Button fx:id="signUpButton" layoutX="530.0" layoutY="17.0" mnemonicParsing="false" prefHeight="38.0" prefWidth="159.0" style="-fx-background-color: #69a352;" text="Регистрация" textFill="WHITE">
          <font>
             <Font name="Centaur" size="17.0" />
          </font>

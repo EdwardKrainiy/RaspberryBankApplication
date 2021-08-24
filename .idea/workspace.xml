@@ -4,7 +4,17 @@
     <option name="autoReloadType" value="ALL" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="2e40fb38-3a91-442e-a029-a5eedd6ab6a4" name="Default Changelist" comment="" />
+    <list default="true" id="2e40fb38-3a91-442e-a029-a5eedd6ab6a4" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Util/UiUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Util/UiUtil.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/controller/AppMainWindowContoller.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/controller/AppMainWindowController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/controller/SignInWindowController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/controller/SignInWindowController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/controller/SignUpEnterPersonalController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/controller/SignUpEnterPersonalController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/dao/AccountInfoRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dao/AccountInfoRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/fxml/appMainWindow.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/fxml/appMainWindow.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/fxml/signInWindow.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/fxml/signInWindow.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/fxml/signUpWindow.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/fxml/signUpWindow.fxml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -183,7 +193,8 @@
       <workItem from="1629546999204" duration="4523000" />
       <workItem from="1629559788882" duration="896000" />
       <workItem from="1629710282765" duration="5959000" />
-      <workItem from="1629722387123" duration="2571000" />
+      <workItem from="1629722387123" duration="3168000" />
+      <workItem from="1629796483314" duration="2370000" />
     </task>
     <task id="LOCAL-00001" summary="Added services.">
       <created>1628611640766</created>
@@ -353,7 +364,14 @@
       <option name="project" value="LOCAL" />
       <updated>1629743507396</updated>
     </task>
-    <option name="localTasksCounter" value="25" />
+    <task id="LOCAL-00025" summary="Added moveToSignInButton on signUpWindow.">
+      <created>1629743928985</created>
+      <option name="number" value="00025" />
+      <option name="presentableId" value="LOCAL-00025" />
+      <option name="project" value="LOCAL" />
+      <updated>1629743928985</updated>
+    </task>
+    <option name="localTasksCounter" value="26" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -421,7 +439,8 @@
     <MESSAGE value="Minor changes on controllers." />
     <MESSAGE value="Major error fixes. Now all completely works." />
     <MESSAGE value="Added default actions for buttons. Now you can control app by keyboard." />
-    <option name="LAST_COMMIT_MESSAGE" value="Added default actions for buttons. Now you can control app by keyboard." />
+    <MESSAGE value="Added moveToSignInButton on signUpWindow." />
+    <option name="LAST_COMMIT_MESSAGE" value="Added moveToSignInButton on signUpWindow." />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

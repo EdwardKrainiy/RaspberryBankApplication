@@ -72,8 +72,8 @@ public class SignUpEnterPersonalController {
             try {
                 UiUtil.goToNextWindow(WindowPath.SIGN_IN_WINDOW, event);
                 AccountService.deleteAccount(AccountService.findAccount(SignUpWindowController.getCreatedAccountId()));
-                AppMainWindowContoller.setUserFirstName("");
-                AppMainWindowContoller.setUserLastName("");
+                AppMainWindowController.setUserFirstName("");
+                AppMainWindowController.setUserLastName("");
             } catch (IOException e) {
                 e.printStackTrace();
             }
@@ -100,12 +100,14 @@ public class SignUpEnterPersonalController {
                             Card newCard = new Card(SignUpWindowController.getCreatedAccountId(), cardNumber, secureCode);
                             CardService.saveCard(newCard);
 
+                            AccountInfo foundedAccountInfoById = AccountInfoService.findAccountInfoById(SignUpWindowController.getCreatedAccountId());
+
+                            AppMainWindowController.setUserFirstName(foundedAccountInfoById.getFirstname());
+                            AppMainWindowController.setUserLastName(foundedAccountInfoById.getLastname());
+                            AppMainWindowController.setUserId(SignUpWindowController.getCreatedAccountId());
+
                             try {
                                 UiUtil.goToNextWindow(WindowPath.APP_MAIN_WINDOW, event);
-
-                                AppMainWindowContoller.setUserFirstName(AccountInfoService.findAccountInfoById(SignUpWindowController.getCreatedAccountId()).getFirstname());
-                                AppMainWindowContoller.setUserLastName(AccountInfoService.findAccountInfoById(SignUpWindowController.getCreatedAccountId()).getLastname());
-
                             } catch (IOException e) {
                                 e.printStackTrace();
                             }

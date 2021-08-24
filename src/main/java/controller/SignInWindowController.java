@@ -13,6 +13,7 @@ import javafx.scene.control.PasswordField;
 import javafx.scene.control.TextField;
 import javafx.scene.text.Text;
 import model.Account;
+import model.AccountInfo;
 import service.AccountInfoService;
 import service.AccountService;
 
@@ -76,7 +77,7 @@ public class SignInWindowController {
 
             if(!loginText.equals("") && !passwordText.equals("")){
 
-                boolean isLoginExisting = createdAccount != null;
+                boolean isLoginExisting = !createdAccount.equals(null);
 
                 String accountPassword = createdAccount.getPassword();
 
@@ -85,8 +86,10 @@ public class SignInWindowController {
                         AccountRepository accountRepository = new AccountRepository();
                         int accountId = createdAccount.getId();
 
-                        AppMainWindowContoller.setUserFirstName(AccountInfoService.findAccountInfoById(accountId).getFirstname());
-                        AppMainWindowContoller.setUserLastName(AccountInfoService.findAccountInfoById(accountId).getLastname());
+                        AccountInfo foundedAccountInfoById = AccountInfoService.findAccountInfoById(accountId);
+                        AppMainWindowController.setUserFirstName(foundedAccountInfoById.getFirstname());
+                        AppMainWindowController.setUserLastName(foundedAccountInfoById.getLastname());
+                        AppMainWindowController.setUserId(accountId);
 
                         UiUtil.goToNextWindow(WindowPath.APP_MAIN_WINDOW, event);
                     } catch (IOException e) {

@@ -1,6 +1,5 @@
 package dao;
 
-import model.Account;
 import model.AccountInfo;
 import utils.HibernateSessionFactory;
 
@@ -11,7 +10,7 @@ public class AccountInfoRepository extends EntityRepository<AccountInfo> {
     }
 
     public AccountInfo findById(int accountId){
-        return (AccountInfo) HibernateSessionFactory.getSessionFactory().openSession().createQuery("from AccountInfo where accountId =:accountId ")
+        return (AccountInfo) HibernateSessionFactory.getSessionFactory().openSession().createQuery("from AccountInfo where accountId =: accountId ")
                 .setParameter("accountId", accountId).uniqueResult();
     }
 }
