@@ -87,6 +87,7 @@ public class AppMainWindowController {
         initializeExitButton();
         initializeTransactionButton();
         initializeSignOutButton();
+        initializeAccountRefillingButton();
     }
 
     private void initializeGreetingText(){
@@ -121,6 +122,16 @@ public class AppMainWindowController {
         signOutButton.setOnAction(event -> {
             try {
                 UiUtil.goToNextWindow(WindowPath.SIGN_IN_WINDOW, event);
+            } catch (IOException e) {
+                e.printStackTrace();
+            }
+        });
+    }
+    
+    private void initializeAccountRefillingButton(){
+        accountRefillingButton.setOnAction(event -> {
+            try {
+                UiUtil.goToNextWindow(WindowPath.APP_REFILLING_WINDOW, event);
             } catch (IOException e) {
                 e.printStackTrace();
             }

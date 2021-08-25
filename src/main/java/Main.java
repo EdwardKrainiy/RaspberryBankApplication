@@ -6,6 +6,7 @@ import javafx.scene.Scene;
 import javafx.stage.Stage;
 
 import java.io.IOException;
+import java.util.Objects;
 
 public class Main extends Application {
 
@@ -13,11 +14,10 @@ public class Main extends Application {
     public void start(Stage primaryStage) throws Exception {
 
         String fxmlFile = WindowPath.SIGN_IN_WINDOW;
-        FXMLLoader loader = new FXMLLoader();
         Parent root = null;
 
         try {
-            root = FXMLLoader.load(getClass().getResource(fxmlFile));
+            root = FXMLLoader.load(Objects.requireNonNull(getClass().getResource(fxmlFile)));
         } catch (IOException e) {
             e.printStackTrace();
         }

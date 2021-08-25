@@ -6,4 +6,6 @@ public class WindowPath {
     public static final String SIGN_IN_WINDOW = "/fxml/signInWindow.fxml";
     public static final String APP_MAIN_WINDOW = "/fxml/appMainWindow.fxml";
     public static final String APP_TRANSACTION_WINDOW = "/fxml/appTransaсtionWindow.fxml";
+    public static final String APP_REFILLING_WINDOW = "/fxml/appRefillingWindow.fxml";
+
 }
