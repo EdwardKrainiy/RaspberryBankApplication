@@ -1,4 +1,4 @@
-package Util;
+package utils;
 
 import javafx.animation.Animation;
 import javafx.animation.FadeTransition;

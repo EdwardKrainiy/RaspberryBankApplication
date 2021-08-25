@@ -1,7 +1,7 @@
 package controller;
 
-import Util.UiUtil;
-import Util.WindowPath;
+import utils.UiUtil;
+import utils.WindowPath;
 import javafx.fxml.FXML;
 import javafx.scene.control.Button;
 import javafx.scene.text.Text;

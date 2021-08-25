@@ -1,4 +1,4 @@
-package Util;
+package utils;
 
 public class WindowPath {
     public static final String SIGN_UP_WINDOW = "/fxml/signUpWindow.fxml";
