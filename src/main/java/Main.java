@@ -24,7 +24,7 @@ public class Main extends Application {
         }
 
         primaryStage.setScene(new Scene(root, 700, 500));
-        primaryStage.getIcons().add(new Image(getClass().getResourceAsStream("/assets/appIcon.png")));
+        primaryStage.getIcons().add(new Image(Objects.requireNonNull(getClass().getResourceAsStream("/assets/appIcon.png"))));
         primaryStage.setTitle("BankApplication");
         primaryStage.setResizable(false);
         primaryStage.show();

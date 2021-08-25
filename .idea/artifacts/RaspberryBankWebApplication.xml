@@ -1,0 +1,10 @@
+<component name="ArtifactManager">
+  <artifact type="javafx" name="RaspberryBankWebApplication">
+    <output-path>$PROJECT_DIR$/out/artifacts/RaspberryBankWebApplication</output-path>
+    <root id="root">
+      <element id="archive" name="RaspberryBankWebApplication.jar">
+        <element id="module-output" name="RaspberryBankWebApplication" />
+      </element>
+    </root>
+  </artifact>
+</component>
