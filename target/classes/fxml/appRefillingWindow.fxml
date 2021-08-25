@@ -54,7 +54,7 @@
         <AnchorPane layoutX="11.0" layoutY="459.0" prefHeight="1.0" prefWidth="678.0" style="-fx-background-color: #00497d;" />
         <ImageView fitHeight="60.0" fitWidth="53.0" layoutX="11.0" layoutY="8.0" pickOnBounds="true" preserveRatio="true">
             <image>
-                <Image url="@/assets/bankIcon.png" />
+                <Image url="@/assets/bank_icon.png" />
             </image>
         </ImageView>
         <Button fx:id="backButton" layoutX="295.0" layoutY="347.0" mnemonicParsing="false" prefHeight="19.0" prefWidth="111.0" style="-fx-background-color: #ba2727;" text="Назад" textFill="WHITE">
